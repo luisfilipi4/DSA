@@ -4,1302 +4,1239 @@
 <meta charset=utf-8>
 <title>Dev Sites Apps</title>
 <meta content="width=device-width,initial-scale=1" name=viewport>
-<meta content="Free HTML Templates" name=keywords>
-<meta content="Free HTML Templates" name=description>
-<!-- Favicon -->
-<link rel="icon" href="./imagens/Logo2.0.PNG">
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital@0;1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
-<!-- Bootstrap CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<!-- Icon Libraries -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
-<link href="https://unpkg.com/css.gg@2.0.0/icons/css/list.css" rel="stylesheet">
-<!-- Animation Libraries -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-<link href="lib/animate/animate.min.css" rel="stylesheet">
-<!-- Carousel Libraries -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-<!-- Custom CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<style>
-html {
-    scroll-behavior: smooth;
-}
-
-.button-container{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.category-button{padding:10px 20px;margin:5px;cursor:pointer;background-color:#f5f5f5;border:1px solid #ddd;border-radius:5px;transition:.3s;color:#000}.category-button:hover{background-color:#da251d}
-
-#introdução {
-    display: flex;
-    justify-content: center;
-}
-
-strong {
-    color: #28a745;
-    text-shadow: 0px 0px 1px black;
-}
-
-#testimonials {
-    /* Define a altura fixa */
-    height: 100%; /* Ajuste conforme necessário */
-    overflow: hidden; /* Oculta o conteúdo que excede a altura definida */
-}
-
-#mapa-interativo {
-    /* border: 1px solid rgb(89, 89, 89); */
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
-}
-</style>
+<link rel=icon href=./imagens/Logo2.0.PNG>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital@0;1&display=swap" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel=stylesheet>
+<link href=https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css rel=stylesheet>
+<link rel=stylesheet href=https://unpkg.com/leaflet/dist/leaflet.css>
+<link rel=stylesheet href=https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css>
+<link rel=stylesheet href=https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css>
+<link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css rel=stylesheet>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css>
+<link href=https://unpkg.com/css.gg@2.0.0/icons/css/list.css rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css>
+<link href=lib/animate/animate.min.css rel=stylesheet>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css>
+<link href=lib/owlcarousel/assets/owl.carousel.min.css rel=stylesheet>
+<link href=css/bootstrap.min.css rel=stylesheet>
+<link href=css/style.css rel=stylesheet>
+<style>html{scroll-behavior:smooth}.button-container{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.category-button{padding:10px 20px;margin:5px;cursor:pointer;background-color:#f5f5f5;border:1px solid #ddd;border-radius:5px;transition:.3s;color:#000}.category-button:hover{background-color:#da251d}#introdução{display:flex;justify-content:center}strong{color:#28a745;text-shadow:0 0 1px #000}#testimonials{height:100%;overflow:hidden}#mapa-interativo{border-radius:10px;box-shadow:0 0 5px #000}</style>
 </head>
 <body>
-    <div id=spinner class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class=spinner></div>
-    </div>
-    <header>
-    <div class="container-fluid px-5 d-none d-lg-block" style=background-color:#000>
-    <div class="row gx-0">
-    <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-    <div class="d-inline-flex align-items-center" style=height:45px>
-    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Camaquã-RS, Rio Grande do Sul, Brasil</small>
-    <small class=text-light><i class="fa fa-envelope-open me-2"></i>luisfilipidev@gmail.com</small>
-    </div>
-    </div>
-    <div class="col-lg-4 text-center text-lg-end">
-    <div class="d-inline-flex align-items-center" style=height:45px>
-    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100081163277933"><i class="fab fa-facebook-f fw-normal"></i></a>
-    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=https://wa.link/uozhdu><i class="bi bi-whatsapp"></i></a>
-    </div>
-    </div>
-    </div>
-    </div>
-    </header>
-    <header id=home>
-    <div class="container-fluid position-relative p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-    <a href=#home class="navbar-brand p-0">
-    <img src="./imagens/Logo3.0.png" width=220 height=50 alt="">
-    </a>
-    <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarCollapse>
-    <span class="fa fa-bars"></span>
-    </button>
-    <div class="collapse navbar-collapse" id=navbarCollapse style="padding: 10px;">
-    <ul class="navbar-nav ml-auto">
-    <li class=nav-item>
-    <a class="nav-link page-scroll" href=#sobre>Home</a>
-    </li>
-    <li class=nav-item>
-    <a class="nav-link page-scroll" href=#diferencial>Diferenciais</a>
-    </li>
-    <li class=nav-item>
-    <a class="nav-link page-scroll" href=#services>Serviços</a>
-    </li>
-    <li class=nav-item>
-    <a class="nav-link page-scroll" href=#custo>Custos?</a>
-    </li>
-    <li class=nav-item>
-    <a class="nav-link page-scroll" href=#testimonials>Depoimentos</a>
-    </li>
-    <li class=nav-item>
-    <a class="nav-link page-scroll" href=#perguntas>Dúvidas?</a>
-    </li>
-    <li class=nav-item>
-    <a class="nav-link page-scroll" href=#news>Blog</a>
-    </li>
-    <li class=nav-item>
-    <a class="nav-link page-scroll" href=#contatos>Contato</a>
-    </li>
-    </ul>
-    </div>
-    </nav>
-    <div id=header-carousel class="carousel slide carousel-fade" data-bs-ride=carousel>
-    <div class=carousel-inner>
-    <div class="carousel-item active">
-    <img class=w-100 src=./imagens/Camaqua-Rota-Farroupilha-RS-13-640x427.jpg alt=Image>
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-    <div class=p-3 style=max-width:900px>
-    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Seja bem-vindo(a) a Dev Sites Apps, minha empresa freelancer de desenvolvimento Web e Apps</h1>
-    </div>
-    </div>
-    </div>
-    <div class=carousel-item>
-    <img class=w-100 src=./imagens/virtual.png alt=Image>
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-    <div class=p-3 style=max-width:900px>
-    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Um site é a vitrine digital do seu negócio, acessível a qualquer momento e de qualquer lugar</h1>
-    </div>
-    </div>
-    </div>
-    <div class=carousel-item>
-    <img class=w-100 src=./imagens/globo.jpg alt=Image>
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-    <div class=p-3 style=max-width:900px>
-    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Ter um site proporciona credibilidade e confiança aos seus clientes, mostrando que você está presente no mundo online</h1>
-    </div>
-    </div>
-    </div>
-    <div class=carousel-item>
-    <img class=w-100 src=./imagens/ferramenta.jpg alt=Image>
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-    <div class=p-3 style=max-width:900px>
-    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Um site é uma poderosa ferramenta de marketing, permitindo que você promova seus produtos, serviços e valores de forma eficaz</h1>
-    </div>
-    </div>
-    </div>
-    <div class=carousel-item>
-    <img class=w-100 src=./imagens/investir.jpg alt=Image>
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-    <div class=p-3 style=max-width:900px>
-    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Ao investir em um site, você investe no crescimento futuro do seu negócio, preparando-se para os desafios e oportunidades do mundo digital</h1>
-    </div>
-    </div>
-    </div>
-    <div class=carousel-item>
-    <img class=w-100 src=./imagens/historia.jpg alt=Image>
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-    <div class=p-3 style=max-width:900px>
-    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Um site é mais do que uma presença online, é uma plataforma para contar a história da sua marca e se conectar emocionalmente com seu público</h1>
-    </div>
-    </div>
-    </div>
-    <div class=carousel-item>
-    <img class=w-100 src=./imagens/edificios.avif alt=Image>
-    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-    <div class=p-3 style=max-width:900px>
-    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Não importa o tamanho do seu negócio, um site é uma ferramenta essencial para competir e prosperar no mercado atual</h1>
-    </div>
-    </div>
-    </div>
-    </div>
-    <button class=carousel-control-prev type=button data-bs-target=#header-carousel data-bs-slide=prev>
-    <span class=carousel-control-prev-icon aria-hidden=true></span>
-    <span class=visually-hidden>Previous</span>
-    </button>
-    <button class=carousel-control-next type=button data-bs-target=#header-carousel data-bs-slide=next>
-    <span class=carousel-control-next-icon aria-hidden=true></span>
-    <span class=visually-hidden>Next</span>
-    </button>
-    </div>
-    </div>
-    </header>
-    <section>
-    <div class="modal fade" id=searchModal tabindex=-1>
-    <div class="modal-dialog modal-fullscreen">
-    <div class=modal-content style=background:rgba(9,30,62,.7)>
-    <div class="modal-header border-0">
-    <button type=button class="btn bg-white btn-close" data-bs-dismiss=modal aria-label=Close></button>
-    </div>
-    <div class="modal-body d-flex align-items-center justify-content-center">
-    <div class=input-group style=max-width:600px>
-    <input class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-    <button class="btn fundo-yellow px-4"><i class="bi bi-search"></i></button>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <header>
-    <div class="container-fluid facts py-5 pt-lg-0">
-    <div class="container py-5 pt-lg-0" id=blocos-statics>
-    <div class="row gx-0">
-    <div id=bloco-static1 class="col-lg-4 wow zoomIn" data-wow-delay=0.1s>
-    <div class="shadow d-flex align-items-center justify-content-center p-4" style=height:150px>
-    <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style=width:60px;height:60px>
-    <i class="fa fa-users text-green"></i>
-    </div>
-    <div class=ps-4>
-    <h5 class="text-white mb-0">Meus clientes</h5>
-    <h1 class="text-white mb-0" data-toggle=counter-up>56</h1>
-    </div>
-    </div>
-    </div>
-    <div id=bloco-static2 class="col-lg-4 wow zoomIn" data-wow-delay=0.3s>
-    <div class="shadow d-flex align-items-center justify-content-center p-4" style=height:150px>
-    <div class="d-flex align-items-center justify-content-center rounded mb-2" style=width:60px;height:60px>
-    <i class="fa fa-check text-white"></i>
-    </div>
-    <div class=ps-4>
-    <h5 class="text-white mb-0">Projetos concluidos</h5>
-    <h1 class="text-white mb-0" data-toggle=counter-up>56</h1>
-    </div>
-    </div>
-    </div>
-    <div id=bloco-static3 class="col-lg-4 wow zoomIn" data-wow-delay=0.3s>
-    <div class="shadow d-flex align-items-center justify-content-center p-4" style=height:150px>
-    <div class="d-flex align-items-center justify-content-center rounded mb-2" style=width:60px;height:60px>
-    <i class="fa fa-check text-white"></i>
-    </div>
-    <div class=ps-4>
-    <h5 class="text-white mb-0">Páginas construidas</h5>
-    <h1 class="text-white mb-0" data-toggle=counter-up>185</h1>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </header>
-    <main>
-    <section class="map-section">
-    <div class="container">
-    <h5 class="fw-bold text-green text-uppercase" style="text-align: center;">Eu sai de uma cidade pequena do RS para grandes partes pelo nosso Brasil</h5>
-    <h1 class="title mb-4 wow fadeInUp">Veja abaixo as cidades onde tenho o orgulho de ter contribuído com projetos de desenvolvimento web e apps para diversos clientes</h1>
-    <div id="map" class="map-container wow zoomIn"></div>
-    </div>
-    </section>
-    <section id=sobre>
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
-    <div class="container py-5">
-    <div class="row g-5">
-    <div class=col-lg-7>
-    <div class="section-title position-relative pb-3 mb-5">
-    <h1 class=mb-0>Olá, me chamo Luis Filipi e sou Desenvolvedor Web e de Aplicativos Híbridos</h1>
-    <h5 class="fw-bold text-green text-uppercase">Nasce em São Lourenço do Sul, mas estou morando em Camaquã-RS, cidade que possui essa linda igreja Matriz São João Batista</h5>
-    </div>
-    <p class=mb-4>Sou um desenvolvedor web de Front-End focado em criar sites e aplicativos com o propósito claro de resolver desafios de visibilidade e marketing para empresas. Meu objetivo é não apenas melhorar a presença online de uma empresa, mas também encontrar soluções inovadoras que impulsionem seu crescimento e alcance.</p>
-    <p class=mb-4>Embora valorize minha capacidade de resolver problemas de forma independente, aprendi que o trabalho em equipe é fundamental. Ao colaborar com outros talentos, posso ampliar minha perspectiva e aprimorar minhas habilidades.</p>
-    <p class=mb-4>Desde que entrei no mundo do Front-End em outubro de 2023, tenho sido impulsionado pela minha criatividade e pela paixão por enfrentar desafios. A cada projeto, descubro novas maneiras de combinar funcionalidade e design para entregar soluções que não só atendam às necessidades do cliente, mas também superem suas expectativas.</p>
-    <p class=mb-4>Estou comprometido em aprimorar continuamente minhas habilidades e conhecimentos ao longo deste ano, buscando novas oportunidades para expandir minha experiência no desenvolvimento Front-End.</p>
-    <div class="row g-0 mb-3">
-    <div class="col-sm-6 wow zoomIn" data-wow-delay=0.2s>
-    <h5 class="fw-bold text-green text-uppercase">Tenho experiência em:</h5>
-    <h5 class=mb-3><i class="fa fa-check text-green me-3"></i>Gestão de projetos</h5>
-    <h5 class=mb-3><i class="fa fa-check text-green me-3"></i>Desenvolvimento web
-    </h5>
-    <h5 class=mb-3><i class="fa fa-check text-green me-3"></i>Desenvolvimento de software Híbridos</h5>
-    <h5 class=mb-3><i class="fa fa-check text-green me-3"></i>Resolução de problemas</h5>
-    </div>
-    <a href=# id=button-link class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>Solicitar um orçamento gratuito</a>
-    <div id=caixa-orcamento class=orcamento>
-    <i class="bi bi-x-square close-btn"></i>
-    <a target=_blank href="https://www.facebook.com/profile.php?id=100081163277933" class="btn fundo-yellow py-3 px-5 mt-3">Messenger</a>
-    <a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3">WhatsApp</a>
-    <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">luisfilipidev@gmail.com</a>
-    </div>
-    </div>
-    </div>
-    <div class=col-lg-5 style=min-height:500px>
-    <div class="position-relative h-100">
-    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay=0.9s src=./imagens/Camaqua3.jpg style=object-fit:cover>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <section id="introducao">
-        <div >
-            <div >
-                <div >
-                    <h1 class="title mb-4 wow fadeInUp">Bem-vindo(a) à Dev Sites Apps</h1>
-                    <div class="container">
-                        <p class="wow fadeInUp" style="text-align: center; font-size: 20px;">Sou Luis Filipi, o criador da <strong style="color: #28a745;">Dev</strong> <strong style="color: #da251d;">Sites</strong> <strong style="color: #d6cf00;">Apps</strong>, uma empresa dedicada a oferecer serviços de desenvolvimento de sites e aplicativos como freelancer. A Dev Sites Apps é a extensão da minha paixão por tecnologia e design, permitindo-me distribuir minha expertise e atender clientes com soluções web personalizadas. Cada projeto é uma oportunidade de traduzir a visão do cliente em uma presença online impactante e funcional.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>     
-    <section id="custo">
-        <div id="empresa">
-            <section class="section">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-7">
-                            <h1 class="title mb-4 wow fadeInUp" style="text-align: center;">Sobre a <strong style="color: #28a745;">Dev</strong> <strong style="color: #da251d;">Sites</strong> <strong style="color: #d6cf00;">Apps</strong></h1>
-                            <div class="screen-normal wow fadeInUp">
-                                <div class="wow zoomIn" id="mapa-interativo" style="width: 95%; height: 500px;"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 mobmartop30 1 div-empresa">
-                            <div class="tagline-v2 padleft30 wow fadeInUp">
-                                <h5 class="margin-top fw-bold" style="letter-spacing: 2px;">A <strong style="color: #28a745;">Dev</strong> <strong style="color: #da251d;">Sites</strong> <strong style="color: #d6cf00;">Apps</strong> é uma empresa criada por mim, para representar meu trabalho como desenvolvedor freelancer de sites e aplicativos. Esta empresa reflete meu compromisso com a criação de soluções web personalizadas e de alta qualidade para meus clientes. Ao escolher a Dev Sites Apps, você está optando por uma empresa que valoriza a excelência e a inovação na construção de sites, com uma abordagem focada em atender às suas necessidades específicas.</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>   
-    <div id=popup class=popup>
-    copiado: <span id=phone-number-copied></span>
-    </div>
-    <section id=diferencial>
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
-    <div class="container py-5">
-    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
-    <h5 class="fw-bold text-green text-uppercase">Dev Sites Apps</h5>
-    <h1 class="mb-0">Diferenciais que você encontra comigo</h1>
-    </div>
-    <div class="row g-5">
-    <div class="col-lg-4">
-    <div class="row g-5">
-    <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-    <div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px">
-    <i class="bi bi-person-circle text-white"></i>
-    </div>
-    <h4>Foco na Experiência do Usuário</h4>
-    <p class="mb-0">Coloco a experiência do usuário em primeiro lugar, garantindo interfaces intuitivas e amigáveis</p>
-    </div>
-    <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-    <div id="icones-bloco" class="text-red rounded d-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px">
-    <i class="gg-list text-white"></i>
-    </div>
-    <h4>Design Criativo e Funcional</h4>
-    <p class="mb-0">Combino criatividade com funcionalidade para criar designs atraentes e eficazes.</p>
-    </div>
-    <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-    <div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px">
-    <i class="bi bi-hourglass-split text-white"></i>
-    </div>
-    <h4>Priorizar o Tempo do Cliente</h4>
-    <p class="mb-0">Simplifico processos, reduzo esperas e ofereço soluções ágeis para o desenvolvimento de sua presença digital.</p>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.9s" style="min-height:350px">
-    <div class="position-relative h-100">
-    <img class="position-absolute w-100 h-100 rounded wow zoomIn" width="20" height="20" data-wow-delay="0.1s" src="./imagens/grup.jpg" style="object-fit:cover">
-    </div>
-    </div>
-    <div class="col-lg-4">
-    <div class="row g-5">
-    <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-    <div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px">
-    <i class="bi bi-phone-fill text-white"></i>
-    </div>
-    <h4>Expertise em Tecnologias Híbridas</h4>
-    <p class="mb-0">Tenho profundo conhecimento em tecnologias híbridas para oferecer soluções eficientes e escaláveis.</p>
-    </div>
-    <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-    <div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px">
-    <i class="bi bi-person-check-fill text-white"></i>
-    </div>
-    <h4>Abordagem Colaborativa</h4>
-    <p class="mb-0">Valorizo a colaboração com meus clientes, garantindo que suas necessidades e expectativas sejam atendidas em cada etapa do projeto.</p>
-    </div>
-    <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-    <div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px">
-    <i class="bi bi-gear-fill text-white"></i>
-    </div>
-    <h4>Gerencio sua hospedagem e manutenção continuamente</h4>
-    <p class="mb-0">Fazendo você não se preocupar com quase nada, apenas com a ideia do seu próprio projeto.</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <section id="services">
-        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width:600px">
-        <h5 class="fw-bold text-green text-uppercase">Dev Sites Apps</h5>
-        <h1 class="title mb-4 wow fadeInUp">Meus serviços para você</h1>
-        </div>
-        <div class="row g-5" id="linha1">
-        <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-        <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-        <div class="service-icon">
-        <i class="fa-solid fa-laptop-code"></i>
-        </div>
-        <h4 id="h4-white" class="mb-3">Desenvolvimento de Sites Responsivos</h4>
-        <p class="m-0">Crio sites profissionais e responsivos que se adaptam a diferentes dispositivos, oferecendo uma experiência de usuário otimizada.</p>
-        </div>
-        </div>
-        <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-        <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-        <div class="service-icon">
-        <i class="fab fa-android"></i>
-        </div>
-        <h4 id="h4-white" class="mb-3">Desenvolvimento de Aplicativos Híbridos</h4>
-        <p class="m-0">Desenvolvo aplicativos móveis híbridos utilizando tecnologias de Front-End e Frameworks, garantindo desempenho e funcionalidades de alta qualidade para usuários móveis.</p>
-        </div>
-        </div>
-        <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-        <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-        <div class="service-icon">
-        <i class="fa fa-code"></i>
-        </div>
-        <h4 id="h4-white" class="mb-3">Otimização para SEO</h4>
-        <p class="m-0">Implemento práticas de SEO (Search Engine Optimization) para ajudar você a melhorar sua visibilidade online e alcançar um melhor posicionamento nos resultados de busca.</p>
-        </div>
-        </div>
-        <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-        <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-        <div class="service-icon">
-        <i class="fa-solid fa-bug"></i>
-        </div>
-        <h4 id="h4-white" class="mb-3">Resolução de Problemas no Front-End</h4>
-        <p class="m-0">Ofereço serviços para identificar e corrigir bugs, responsividade UI/UX, compatibilidade do navegador, melhoria da acessibilidade, etc.</p>
-        </div>
-        </div>
-        <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-        <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-        <div class="service-icon">
-        <i class="bi bi-brush"></i>
-        </div>
-        <h4 id="h4-white" class="mb-3">Logo Marca</h4>
-        <p class="m-0">Crio sua logo gratuitamente com IA.</p>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-        <div class="position-relative text-red rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-        <h3 class="text-white mb-3">Envie um email para um orçamento</h3>
-        <h5 class="text-white mb-0">luisfilipidev@gmail.com</h5>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </section>       
-    <section id="construcao">
-        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width:600px">
-              <h5 class="fw-bold text-green text-uppercase">Dev Sites Apps</h5>
-              <h1 class="title mb-4 wow fadeInUp">Como posso construir sua presença?</h1>
-            </div>
-            <div class="row g-5" id="linha1">
-              <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div class="service-icon">
-                    <i class="bi bi-google"></i>
-                  </div>
-                  <h4 class="mb-3">Google Sites</h4>
-                  <p class="m-0">O Google Sites é uma plataforma que permite criar sites usando modelos e elementos prontos, sem a necessidade de programar do zero. É uma opção simples para criar um site básico, mas pode ter limitações significativas em termos de personalização e funcionalidades avançadas.</p>
-                </div>
-              </div>
-              <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div class="service-icon">
-                    <i class="fa-brands fa-wix"></i>
-                  </div>
-                  <h4 class="mb-3">Wix</h4>
-                  <p class="m-0">O Wix é uma plataforma que oferece modelos e elementos prontos para criar sites de forma rápida e fácil, com maior capacidade de personalização em comparação com o Google Sites. Ele permite uma customização mais detalhada, mas pode envolver custos adicionais para recursos premium e personalização avançada.</p>
-                </div>
-              </div>
-              <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div class="service-icon">
-                    <i class="bi bi-wordpress"></i>
-                  </div>
-                  <h4 class="mb-3">WordPress</h4>
-                  <p class="m-0">O WordPress é uma das plataformas mais populares e flexíveis para criação de sites. Ele oferece uma ampla variedade de temas e plugins que permitem criar sites altamente personalizados e funcionais, sem a necessidade de programação avançada. O WordPress oferece maior flexibilidade e escalabilidade do que o Wix, mas também pode envolver custos adicionais para recursos premium e personalização avançada.</p>
-                </div>
-              </div>
-              <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div class="service-icon">
-                    <i class="bi bi-code-square"></i>
-                  </div>
-                  <h4 class="mb-3">Website Personalizado</h4>
-                  <p class="m-0">Desenvolvo sites personalizados que variam de simples a complexos, adaptados às suas necessidades específicas. Posso criar um site que reflete a identidade da sua marca e oferece a funcionalidade desejada.</p>
-                </div>
-              </div>
-              <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div class="service-icon">
-                    <i class="bi bi-cart"></i>
-                  </div>
-                  <h4 class="mb-3">Loja Online (E-commerce)</h4>
-                  <p class="m-0">Crio lojas online com recursos completos, incluindo exibição de produtos, promoções, carrinho de compras com cálculo total, localização interativa com mapa GPS, previsão do tempo e outros recursos avançados para uma experiência de compra envolvente e conveniente.</p>
-                </div>
-              </div>
-              <div id="blocos-item" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                <div id="sub-bloco-item" class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
-                  <div class="service-icon">
-                    <i class="bi bi-person-circle"></i>
-                  </div>
-                  <h4 class="mb-3">Blog</h4>
-                  <p class="m-0">Desenvolvo blogs pessoais ou sites de notícias que são fáceis de gerenciar e atualizar. Posso criar um espaço onde você pode compartilhar suas ideias, publicar conteúdo regularmente e interagir com seus leitores de forma eficaz.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>      
-      <section>
-        <div class="container" id="id-container">
-          <h1 class="title mb-4 wow fadeInUp" data-wow-delay="0.1s" style="color:#000;text-align:center">Modelos de Sites</h1>
-          <div class="button-container wow fadeInUp" data-wow-delay="0.1s">
-            <button class="category-button" data-category="all">Todos</button>
-            <button class="category-button" data-category="barber">Barbearia</button>
-            <button class="category-button" data-category="carp">Carpintaria</button>
-            <button class="category-button" data-category="dentist">Dentista</button>
-            <button class="category-button" data-category="lab">Laboratório</button>
-            <button class="category-button" data-category="logistic">Logística</button>
-            <button class="category-button" data-category="mercad">Mercado</button>
-            <button class="category-button" data-category="photo">Fotografia</button>
-            <button class="category-button" data-category="restaurant">Restaurante</button>
-            <button class="category-button" data-category="supermercad">Supermercado</button>
-          </div>
-          <div class="view-toggle">
-            <button id="desktop-view" class="active">Versão Desktop</button>
-            <button id="mobile-view">Versão Mobile</button>
-          </div>
-          <div class="model-container">
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="barber">
-              <div class="desktop-view">
-                <img src="Modelos/Capa/BRB.PNG" alt="Modelo de Barbearia">
-                <p>Modelo de Barbearia</p>
-                <a href="Modelos/Barbearia/index.html" class="view-full-site">Ver Site Completo</a>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Barbearia/index.html" frameborder="0"></iframe>
-              <video id="video-barber" class="model-video" controls>
-                <source src="Vídeos/barbearia.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="carp">
-              <div class="desktop-view">
-                <img src="Modelos/Capa/CAP.PNG" alt="Modelo de Carpintaria">
-                <p>Modelo de Carpintaria</p>
-                <a href="Modelos/Madeira/index.html" class="view-full-site">Ver Site Completo</a>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Madeira/index.html" frameborder="0"></iframe>
-              <video id="video-carp" class="model-video" controls>
-                <source src="Vídeos/carpint.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="dentist">
-              <div class="desktop-view">
-                <img src="Modelos/Capa/DENT.PNG" alt="Modelo de Odontologia">
-                <p>Modelo de Odontologia</p>
-                <a href="Modelos/Dentcare/index.html" class="view-full-site">Ver Site Completo</a>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Dentcare/index.html" frameborder="0"></iframe>
-              <video id="video-dentist" class="model-video" controls>
-                <source src="Vídeos/dentista.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="lab">
-              <div class="desktop-view">
-                <img src="Modelos/Capa/lab.PNG" alt="Modelo de Laboratório">
-                <p>Modelo de Laboratório</p>
-                <a href="Modelos/Lab/index.html" class="view-full-site">Ver Site Completo</a>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Lab/index.html" frameborder="0"></iframe>
-              <video id="video-lab" class="model-video" controls>
-                <source src="Vídeos/lab.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="logistic">
-              <div class="desktop-view">
-                <img src="Modelos/Capa/LE.PNG" alt="Modelo de Logística">
-                <p>Modelo de Logística</p>
-                <a href="Modelos/Logistic Express/index.html" class="view-full-site">Ver Site Completo</a>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Logistic Express/index.html" frameborder="0"></iframe>
-              <video id="video-logistic" class="model-video" controls>
-                <source src="Vídeos/logistic.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="mercad">
-              <div class="desktop-view">
-                <img src="Modelos/Capa/Mercado.PNG" alt="Modelo de Mercado">
-                <p>Modelo de Mercado</p>
-                <a href="Modelos/Fruitkha/index.html" class="view-full-site">Ver Site Completo</a>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Fruitkha/index.html" frameborder="0"></iframe>
-              <video id="video-mercad" class="model-video" controls>
-                <source src="Vídeos/mercado.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="photo">
-              <div class="desktop-view">
-                <img src="Modelos/Capa/PHOTO.PNG" alt="Modelo de Fotografia">
-                <p>Modelo de Estúdio de Fotografia</p>
-                <a href="Modelos/Phozogy-Master/index.html" class="view-full-site">Ver Site Completo</a>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Phozogy-Master/index.html" frameborder="0"></iframe>
-              <video id="video-photo" class="model-video" controls>
-                <source src="Vídeos/photo.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="restaurant">
-              <div class="desktop-view">
-                <div class="image-wrapper">
-                  <img src="Modelos/Capa/REST.PNG" alt="Modelo de Restaurante">
-                </div>
-                <div class="text-wrapper">
-                  <p>Modelo de Restaurante</p>
-                  <a href="Modelos/Restaurantly/index.html" class="view-full-site">Ver Site Completo</a>
-                </div>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Restaurantly/index.html" frameborder="0"></iframe>
-              <video class="model-video" controls>
-                <source src="Vídeos/restaurante.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="supermercad">
-              <div class="desktop-view">
-                <img src="Modelos/Capa/Supermercado.PNG" alt="Modelo de Supermercado">
-                <p>Modelo de Supermercado</p>
-                <a href="Modelos/Biolife/index.html" class="view-full-site">Ver Site Completo</a>
-              </div>
-              <iframe class="model-iframe" src="Modelos/Biolife/index.html" frameborder="0"></iframe>
-              <video id="video-supermercad" class="model-video" controls>
-                <source src="Vídeos/supermercado.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-        <div class="divs-full-site-mobile">
-          <p style="text-align:center;color:#000">Deslize o dedo sobre as imagens para visualizar o próximo slide ou toque em um dos botões</p>
-          <div class="carousel-container">
-            <div class="model-item-2">
-              <img src="Modelos/Capa/REST.PNG" alt="Modelo de Restaurante">
-              <p>Modelo de Restaurante</p>
-              <a href="Modelos/Restaurantly/index.html" class="view-full-site">Ver Site Completo</a>
-            </div>
-            <div class="model-item-2">
-              <img src="Modelos/Capa/BRB.PNG" alt="Modelo de Barbearia">
-              <p>Modelo de Barbearia</p>
-              <a href="Modelos/Barbearia/index.html" class="view-full-site">Ver Site Completo</a>
-            </div>
-            <div class="model-item-2">
-              <img src="Modelos/Capa/LE.PNG" alt="Modelo de Logística">
-              <p>Modelo de Logística</p>
-              <a href="Modelos/Logistic Express/index.html" class="view-full-site">Ver Site Completo</a>
-            </div>
-            <div class="model-item-2">
-              <img src="Modelos/Capa/DENT.PNG" alt="Modelo de Odontologia">
-              <p>Modelo de Odontologia</p>
-              <a href="Modelos/Dentcare/index.html" class="view-full-site">Ver Site Completo</a>
-            </div>
-            <div class="model-item-2">
-              <img src="Modelos/Capa/Mercado.PNG" alt="Modelo de Mercado">
-              <p>Modelo de Mercado</p>
-              <a href="Modelos/Fruitkha/index.html" class="view-full-site">Ver Site Completo</a>
-            </div>
-            <div class="model-item-2">
-              <img src="Modelos/Capa/Supermercado.PNG" alt="Modelo de Supermercado">
-              <p>Modelo de Supermercado</p>
-              <a href="Modelos/Biolife/index.html" class="view-full-site">Ver Site Completo</a>
-            </div>
-            <div class="model-item-2">
-              <img src="Modelos/Capa/PHOTO.PNG" alt="Modelo de Fotografia">
-              <p>Modelo de Estúdio de Fotografia</p>
-              <a href="Modelos/Phozogy-Master/index.html" class="view-full-site">Ver Site Completo</a>
-            </div>
-            <div class="model-item-2">
-              <img src="Modelos/Capa/CAP.PNG" alt="Modelo de Carpintaria">
-              <p>Modelo de Carpintaria</p>
-              <a href="Modelos/Madeira/index.html" class="view-full-site">Ver Site Completo</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-    <section id=custo>
-    <div id=empresa>
-    <section class=section>
-    <div class=container>
-    <div class="row align-items-center">
-    <div class=col-md-7>
-    <h1 class="title mb-4 wow fadeInUp">E na questão de custos?</h1>
-    <div class="screen-normal wow fadeInUp">
-    <img src=./imagens/money.jpg alt="" class=img-fluid>
-    </div>
-    </div>
-    <div class="col-md-5 mobmartop30 1 div-empresa">
-    <div class="tagline-v2 padleft30 wow fadeInUp">
-    <h5 class=margin-top style="letter-spacing: 2px;">Determino meus preços com base no consenso e de acordo com as necessidades específicas de cada cliente. Isso inclui o custo da hospedagem com domínio fornecido pela empresa, além do valor do serviço que representa o lucro para mim.</h5>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    </div>
-    </section>
-    <section>
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
-    <div class="container py-5">
-    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
-    <h5 class="fw-bold text-uppercase">PLANOS DE PREÇOS</h5>
-    <h1 class="title mb-4 wow fadeInUp">Ofereço Preços Competitivos para Meus Clientes</h1>
-    </div>
-    <div class="row g-0">
-    <div class="col-lg-4 wow slideInUp" data-wow-delay=0.6s>
-    <div class=rounded style=background-color:#fff>
-    <div class="border-bottom py-4 px-5 mb-4">
-    <h4 class=mb-1>Plano Básico</h4>
-    <small class=text-uppercase>Para Sites de Uma Página</small>
-    </div>
-    <div class="p-5 pt-0">
-    <h1 class="display-5 mb-3">
-    <small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>1.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
-    </h1>
-    <div class="d-flex justify-content-between mb-3"><span>Design Básico</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Informações Essenciais</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Formulário de Contato</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>SEO Básico</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Suporte Técnico por Email</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-2"><span>Backup Semanal</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 200 / Mês</span></div>
-    <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-4 wow slideInUp" data-wow-delay=0.3s>
-    <div class="bg-white rounded shadow position-relative" style=z-index:1>
-    <div class="border-bottom py-4 px-5 mb-4">
-    <h4 class=mb-1>Plano Institucional</h4>
-    <small class=text-uppercase>Para Sites Corporativos</small>
-    </div>
-    <div class="p-5 pt-0">
-    <h1 class="display-5 mb-3">
-    <small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>3.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
-    </h1>
-    <div class="d-flex justify-content-between mb-3"><span>Design Personalizado</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Páginas Ilimitadas</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Galeria de Fotos</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>SEO Avançado</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Blog Integrado</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Analytics & Relatórios</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Suporte Prioritário</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Atualizações Mensais</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-2"><span>Treinamento</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 300 / Mês</span></div>
-    <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
-    </div>
-    </div>
-    </div>
-    <div class="col-lg-4 wow slideInUp" data-wow-delay=0.9s>
-    <div class=rounded style=background-color:#fff>
-    <div class="border-bottom py-4 px-5 mb-4">
-    <h4 class=mb-1>Plano E-commerce</h4>
-    <small class=text-uppercase>Para Lojas Online</small>
-    </div>
-    <div class="p-5 pt-0">
-    <h1 class="display-5 mb-3">
-    <small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>5.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
-    </h1>
-    <div class="d-flex justify-content-between mb-3"><span>Carrinho de Compras</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Sistema de Pagamento</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Gerenciamento de Produtos</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>SEO Completo</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Marketing por Email</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Analytics & Relatórios Avançados</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Suporte Premium</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Atualizações Semanais</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-3"><span>Treinamento Avançado</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-2"><span>Integração com Chatbot</span><i class="fa fa-check pt-1"></i></div>
-    <div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 500 / Mês</span></div>
-    <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <section>
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
-    <div class="container py-5">
-    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
-    <h5 class="fw-bold text-uppercase">CALCULADORA DE ORÇAMENTO</h5>
-    <h1 class="title mb-4 wow fadeInUp">Estime o Custo do Seu Projeto</h1>
-    </div>
-    <div class="calculator-container rounded shadow p-5 bg-white">
-    <form id=budget-form>
-    <div class="form-group mb-4">
-    <label for=project-type>Tipo de Projeto</label>
-    <select id=project-type class=form-control onchange=updateFunctionalities()>
-    <option value=site_institucional>Site Institucional</option>
-    <option value=ecommerce>E-commerce</option>
-    <option value=blog>Blog</option>
-    <option value=app_mobile>Aplicativo Móvel</option>
-    </select>
-    </div>
-    <div class="form-group mb-4">
-    <label for=pages-number>Número de Páginas</label>
-    <input type=number id=pages-number class=form-control min=1 value=1>
-    </div>
-    <div class="form-group mb-4">
-    <label>Funcionalidades Adicionais</label>
-    <div id=additional-features>
-    </div>
-    </div>
-    <div class="form-group mb-4">
-    <label for=design-level>Nível de Design</label>
-    <select id=design-level class=form-control>
-    <option value=basic>Básico</option>
-    <option value=intermediate>Intermediário</option>
-    <option value=advanced>Avançado</option>
-    </select>
-    </div>
-    <div class="form-group mb-4">
-    <label for=maintenance>Manutenção e Suporte</label>
-    <select id=maintenance class=form-control>
-    <option value=none>Nenhum</option>
-    <option value=basic_support>Suporte Básico</option>
-    <option value=full_support>Suporte Completo</option>
-    </select>
-    </div>
-    <div class="form-group mb-4">
-    <label for=deadline>Prazo de Entrega</label>
-    <select id=deadline class=form-control>
-    <option value=normal>Normal</option>
-    <option value=fast>Rápido</option>
-    <option value=extended>Estendido</option>
-    </select>
-    </div>
-    <button type=button class="btn fundo-yellow py-3 px-5 mt-3" onclick=calculateBudget()>Calcular Orçamento</button>
-    </form>
-    <div id=budget-result class="result mt-5 text-center">
-    <h3 style=color:#000>Seu Orçamento Estimado</h3>
-    <p id=result-amount class=display-4><span class=green-currency>R$ </span>0,00</p>
-    <p id=monthly-amount class=display-6><span class=green-currency>R$ </span>0,00 por mês</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <section>
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
-    <div class="container py-5">
-    <div class="row g-5">
-    <div class=col-lg-7>
-    <div class="section-title position-relative pb-3 mb-5">
-    <h5 class="fw-bold text-green text-uppercase">Solicite um Orçamento</h5>
-    <h1 class=mb-0>Precisa de um orçamento grátis? Sinta-se à vontade para entrar em contato conosco</h1>
-    </div>
-    <div class="row gx-3">
-    <div class="col-sm-6 wow zoomIn" data-wow-delay=0.2s>
-    <h5 class=mb-4><i class="fa fa-reply text-green me-3"></i>Responder dentro de 13 horas - 08:00AM - 20:00PM</h5>
-    </div>
-    </div>
-    <p class=mb-4>Entre em contato conosco através pelo nosso Messenger do Facebook, pelo nosso Email ou pelo nosso líder da equipe de desenvolvimento Web e Apps, que te espera pelo WhatsApp.</p>
-    <a href=# id=button-link-2 class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>Solicitar um Orçamento</a>
-    <div id=caixa-orcamento-2 class=orcamento>
-    <i class="bi bi-x-square close-btn"></i>
-    <a target=_blank href="https://www.facebook.com/profile.php?id=100081163277933" class="btn fundo-yellow py-3 px-5 mt-3">Messenger</a>
-    <a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3">WhatsApp</a>
-    <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">luisfilipidev@gmail.com</a>
-    </div>
-    </div>
-    <div class=col-lg-5 id=coluna-blocs>
-    <a target=_blank href="https://www.facebook.com/profile.php?id=100081163277933" class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>Messenger</a>
-    <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">luisfilipidev@gmail.com</a>
-    <a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>WhatsApp - Luis Filipi</a>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <section id=testimonials>
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
-    <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style=max-width:600px>
-    <h5 class="fw-bold text-green text-uppercase">Alguns Depoimentos...</h5>
-    <h1 class="title mb-4 wow fadeInUp">O que os meus primeiros clientes dizem sobre meus serviços digitais</h1>
-    </div>
-    <div class=testimonial-container>
-    <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay=0.6s>
-    <div class="testimonial-item my-4">
-    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-    <img class="img-fluid rounded" src=./imagens/user2.png style=width:60px;height:60px>
-    <div class=ps-4>
-    <h4 class="text-green mb-1">Sandra Regina Oliveira</h4>
-    <small class="text-uppercase text-yellow">Vendedora de Produtos</small>
-    </div>
-    </div>
-    <div class="pt-4 pb-5 px-5" id=text-black>
-    "Como vendedora de produtos, contar com a Dev Sites Apps do Sul foi uma decisão transformadora para o meu negócio. Antes de trabalhar com eles, eu tinha dificuldades em promover meus produtos de forma eficaz online. No entanto, desde que a Dev Sites Apps desenvolveu nosso site e nos orientou sobre estratégias digitais, tenho visto um crescimento significativo nas vendas e na visibilidade da minha marca."
-    </div>
-    </div>
-    <div class="testimonial-item my-4">
-    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-    <img class="img-fluid rounded" src=./imagens/user3.avif style=width:60px;height:60px>
-    <div class=ps-4>
-    <h4 class="text-green mb-1">Fabrício Luiz Santos</h4>
-    <small class="text-uppercase text-yellow">Barbeiro</small>
-    </div>
-    </div>
-    <div class="pt-4 pb-5 px-5" id=text-black>
-    "Como proprietário de uma barbearia, sempre busco maneiras de aprimorar minha presença online e atrair mais clientes para o meu estabelecimento. Foi quando descobri a Dev Sites Apps. Eles não apenas desenvolveram um site profissional e elegante para minha barbearia, mas também implementaram estratégias inteligentes de marketing digital."
-    </div>
-    </div>
-    <div class="testimonial-item my-4">
-    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-    <img class="img-fluid rounded" src=./imagens/user1.png style=width:60px;height:60px>
-    <div class=ps-4>
-    <h4 class="text-green mb-1">Marcos Antônio Silva</h4>
-    <small class="text-uppercase text-yellow">Mecânico</small>
-    </div>
-    </div>
-    <div class="pt-4 pb-5 px-5" id=text-black>
-    "Como mecânico, sei que ter uma presença online forte é essencial para atrair novos clientes e construir uma reputação sólida no mercado. Foi por isso que escolhi trabalhar com a Dev Sites Apps para desenvolver nosso site e implementar estratégias de marketing digital."
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <section class="accordion-1" id="perguntas">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 wow fadeInUp">
-                    <h1 class="title mb-4 wow fadeInUp">Possíveis dúvidas</h1>
-                </div>
-            </div>
-            <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="accordion" id="accordionExample">
-                            <h4>Sobre a Empresa:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingSix">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                            Quando começou a Dev Sites Apps?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        A Dev Sites Apps foi fundada em 16 de Setembro de 2023.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingOne">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Quais são os valores e a missão da Dev Sites Apps?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Meus valores incluem comprometimento com a qualidade, acessibilidade e satisfação do cliente. Minha missão é oferecer presença digital de qualidade para empreendedores de todos os portes.
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Serviços e Produtos - Principais características e benefícios:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingTwo">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Quais são as principais características e benefícios dos meus serviços/produtos?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Ofereço administração de hospedagem de sites com suporte abrangente e garantia de qualidade.
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Processo de Trabalho:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingthree">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
-                                            Como funciona o processo de desenvolvimento de sites/aplicativos comigo?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Minha abordagem inclui análise de requisitos, design, desenvolvimento, testes e lançamento. Garanto suporte abrangente em todas as etapas.
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Preços e Orçamento:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingfour">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                            Como são determinados os preços dos seus serviços?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Os preços são personalizados com base nas necessidades específicas do cliente, considerando custos como hospedagem, domínio e tempo de desenvolvimento.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="extra2">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#extradois" aria-expanded="false" aria-controls="extradois">
-                                            Quais são os métodos de pagamento aceitos?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="extradois" class="collapse" aria-labelledby="extra2" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Aceito pagamento via PIX e PayPal para conveniência dos meus clientes.
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Suporte e Manutenção:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingfive">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                            Oferece suporte técnico após o lançamento do projeto?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Sim, garanto suporte contínuo desde o início até o término da nossa parceria.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="extra4">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#extraquatro" aria-expanded="false" aria-controls="extraquatro">
-                                            Como funciona o suporte técnico e a manutenção de sites/aplicativos?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="extraquatro" class="collapse" aria-labelledby="extra4" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Estou disponível para qualquer alteração, atualização ou modificação necessária nos sites/aplicativos, garantindo funcionamento contínuo e eficiente.
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Tecnologias Utilizadas:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingseven">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-                                            Quais tecnologias utiliza para o desenvolvimento de sites/aplicativos?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Utilizo uma variedade de frameworks e bibliotecas modernas para garantir desempenho, segurança e funcionalidade nos meus projetos.
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Parcerias e Colaborações:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingeight">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
-                                            Está aberto a parcerias ou colaborações com outras empresas?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Sim, busco parcerias estratégicas que beneficiem ambas as partes.
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Privacidade e Segurança:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingnine">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
-                                            Como protege os dados dos clientes?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapsenine" class="collapse" aria-labelledby="headingnine" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Utilizo medidas de segurança avançadas, incluindo criptografia SSL, firewalls e monitoramento constante para proteger os dados dos meus clientes.
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>Contato e Suporte:</h4>
-                            <div class="card wow fadeInUp">
-                                <div class="card-header branco" id="headingten">
-                                    <h4 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
-                                            Qual é o melhor canal para fazer perguntas adicionais ou agendar uma consulta?
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseten" class="collapse" aria-labelledby="headingten" data-parent="#accordionExample">
-                                    <div class="card-body branco">
-                                        Recomendo entrar em contato comigo via Messenger do Facebook ou WhatsApp para obter assistência imediata.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
-    <section id=porqueumsite>
-    <div class="container-xxl py-5">
-    <div class="container px-lg-5">
-    <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay=0.1s>
-    <h1 class="title mb-4 wow fadeInUp">Mas, por que ter um site como <span id=span-color>presença digital </span>hoje em dia?</h1>
-    <p id=p-texto class="p-heading branco textinho" style="text-align: center; font-size: 20px;">Bom no mundo cada vez mais digital em que vivemos, a presença online se tornou essencial para o sucesso de qualquer negócio. Ter um site bem projetado e funcional não é mais um luxo, mas sim uma necessidade para empresas de todos os tamanhos e setores. Aqui estão algumas razões convincentes pelas quais investir em um site é crucial nos dias de hoje:</p>
-    </div>
-    <div>
-    <h5 class="wow fadeInUp" data-wow-delay=1s><span id=span-color>Alcance Global</span>: Um site oferece a oportunidade de alcançar um público global 24 horas por dia, 7 dias por semana. Não há fronteiras geográficas, permitindo que sua empresa seja acessada por clientes em qualquer lugar do mundo.</h5>
-    <h5 class="wow fadeInUp" data-wow-delay=1.5s><span id=span-color>Credibilidade e Profissionalismo</span>: Um site bem projetado transmite credibilidade e profissionalismo para os clientes em potencial. É uma maneira de estabelecer uma impressão positiva desde o primeiro contato, mostrando que sua empresa está séria e comprometida com a excelência.</h5>
-    <h5 class="wow fadeInUp" data-wow-delay=2s><span id=span-color>Informações Acessíveis</span>: Seus clientes podem encontrar facilmente informações sobre seus produtos, serviços, horários de funcionamento, localização e formas de contato através do seu site. Isso proporciona conveniência e transparência, construindo confiança e facilitando o processo de tomada de decisão.</h5>
-    <h5 class="wow fadeInUp" data-wow-delay=2.5s><span id=span-color>Marketing Eficiente</span>: Um site serve como uma poderosa ferramenta de marketing, permitindo que você promova seus produtos e serviços de forma eficaz. Você pode utilizar estratégias de SEO (Otimização de Mecanismos de Busca) publicidade online, redes sociais e conteúdo relevante para atrair e engajar seu público-alvo.</h5>
-    <h5 class="wow fadeInUp" data-wow-delay=2.8s><span id=span-color>Facilidade de Atualização</span>: Ao contrário de materiais impressos, um site pode ser facilmente atualizado e modificado conforme necessário, sem os custos e inconvenientes associados à impressão. Isso garante que suas informações estejam sempre atualizadas e precisas para seus clientes.</h5>
-    <h5 class="wow fadeInUp" data-wow-delay=3s><span id=span-color>Concorrência</span>: Em um mercado competitivo, ter um site pode ser o diferencial entre sua empresa e a concorrência. Seus concorrentes provavelmente já têm presença online, então é essencial que você também esteja presente para não ficar para trás</h5>
-    </div>
-    </div>
-    </div>
-    </section>
-    <article id=news>
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
-    <div class="container py-5">
-    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
-    <h5 class="fw-bold text-uppercase" id=color-tit>Informações importantes recomendadas para você</h5>
-    <h1 class="title mb-4 wow fadeInUp">Com o meu mais recente mini Blog, feito com muita dedicação</h1>
-    </div>
-    <div class="row g-5">
-    <div class="col-lg-4 wow slideInUp" data-wow-delay=0.3s>
-    <div class="blog-item bg-light rounded overflow-hidden">
-    <div class="blog-img position-relative overflow-hidden">
-    <img class=img-fluid src=./imagens/internet.jpg alt="">
-    </div>
-    <div class=p-4 style="background-color: white;">
-    <div class="d-flex mb-3">
-    <small class=me-3><i class="far fa-user text-green me-2"></i>Dev Sites Apps: Luis Filipi W.N</small>
-    <small><i class="far fa-calendar-alt text-green me-2"></i>16, Abril 2024</small>
-    </div>
-    <h4 class=mb-3>Como Construir uma Presença Digital para seu Negócio com Ajuda da Internet?</h4>
-    <p>No mundo atual, ter uma presença digital forte é essencial para o sucesso de qualquer negócio. Com o poder... Nesta matéria, vamos explorar algumas estratégias simples e eficazes para ajudá-lo a construir uma presença digital robusta para o seu negócio, aproveitando ao máximo o potencial da internet.</p>
-    <a class=text-uppercase style=color:#000 href=./noticia.html>Lê matéria <i class="bi bi-arrow-right"></i></a>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </article>
-    <section>
-    <div class=wrapper id=cookie-banner>
-    <header>
-    <i class="fas fa-cookie" id=icone-cookie></i>
-    <h2>Utilizamos cookies</h2>
-    </header>
-    <div class=data>
-    <p>Para garantir a melhor experiência em nosso site. Ao continuar navegando, você concorda com o uso de cookies conforme descrito em nossa <a href=./cookies.html>Política de Cookies</a>.</p>
-    </div>
-    <div class=buttons>
-    <button id=acceptBtn class=button onclick=acceptCookies()>Aceitar</button>
-    <button id=declineBtn class=button onclick=rejectCookies()>Rejeitar</button>
-    </div>
-    </div>
-    </section>
-    </main>
-    <footer id=contatos>
-    <div class="container-fluid footer position-relative text-white-50 py-5 wow fadeIn" data-wow-delay=0.1s>
-    <div class=container>
-    <div class="row g-5 py-5">
-    <div class="col-lg-6 pe-lg-5">
-    <a href=index.html class=navbar-brand>
-    <h1 class="h1 mb-0"><img src="./imagens/Logo3.0.png" width=300 height=50 alt=""></h1>
-    </a>
-    <p class="fs-5 mb-4 text-white margin-top">Dev Sites Apps é uma empresa freelancer de desenvolvimento digital sediada em Camaquã-RS, no estado do Rio Grande do Sul, especializada na criação de sites e aplicativos híbridos de alta qualidade.</p>
-    <p class=text-white><i class="fa fa-map-marker-alt me-2"></i>Camaquã-RS, Rio Grande do Sul, Brasil</p>
-    <p class=text-white><i class="fa fa-envelope me-2"></i>luisfilipidev@gmail.com</p>
-    <div class="d-flex mt-4">
-    <a target=_blank class="btn btn-lg-square fundo-yellow me-2" href=https://wa.link/uozhdu><i class="bi bi-whatsapp"></i></a>
-    <a target=_blank class="btn btn-lg-square fundo-yellow me-2" href="https://www.facebook.com/profile.php?id=100081163277933"><i class="fab fa-facebook-f"></i></a>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-    <div class="section-title section-title-sm position-relative pb-3 mb-4">
-    <h3 class="text-light mb-0">Nossas Políticas</h3>
-    </div>
-    <div class="link-animated d-flex flex-column justify-content-start">
-    <a href=./cookies.html id=p-link>
-    <p class=text-green>Política de Cookies</p>
-    </a>
-    <a href="./política de privacidade.html" id=p-link>
-    <p class="p-small text-green">Política de Privacidade</p>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="container-fluid copyright text-white-50 py-4" id=copyright>
-    <div class=container>
-    <div class=row>
-    <div class="col-md-6 text-center text-md-start">
-    <p class=mb-0>&copy;<span>Copyright
-    <script>document.write((new Date).getFullYear())</script> <a href=#>Dev Sites Apps</a>. Todos os direitos reservados.</span></p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </footer>
-    <a href=# class="btn btn-lg fundo-yellow btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-    <script src="https://unpkg.com/leaflet.polyline.snakeanim.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!-- Animation Libraries -->
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- Easing Libraries -->
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <!-- Waypoints and CounterUp -->
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <!-- Carousel Libraries -->
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- Shuffle Plugin -->
-    <script src="plugins/shuffle/shuffle.min.js"></script>
-    <!-- FontAwesome Kit -->
-    <script src="https://kit.fontawesome.com/6c999c6add.js" crossorigin="anonymous"></script>
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
-    <script>
-    document.querySelectorAll(".model-item-2 video").forEach(e=>{e.addEventListener("click",function(){e.requestFullscreen?e.requestFullscreen():e.mozRequestFullScreen?e.mozRequestFullScreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():e.msRequestFullscreen&&e.msRequestFullscreen()})}),$(document).ready(function(){$(".carousel-container").slick({slidesToShow:1,slidesToScroll:1,arrows:!0,prevArrow:'<button type="button" class="slick-prev">&#8249;</button>',nextArrow:'<button type="button" class="slick-next">&#8250;</button>',responsive:[{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1}}]})});
-    const functionalities={site_institucional:[{id:"seo-optimization",label:"Otimização SEO",value:300},{id:"contact-form",label:"Formulário de Contato",value:100}],ecommerce:[{id:"payment-gateway",label:"Integração com Gateway de Pagamento",value:500},{id:"product-management",label:"Gerenciamento de Produtos",value:400}],blog:[{id:"comment-system",label:"Sistema de Comentários",value:200},{id:"content-scheduling",label:"Agendamento de Conteúdo",value:150}],app_mobile:[{id:"push-notifications",label:"Notificações Push",value:300},{id:"in-app-purchases",label:"Compras In-App",value:400}]};function updateFunctionalities(){const e=document.getElementById("project-type").value,t=document.getElementById("additional-features");t.innerHTML="",functionalities[e].forEach(e=>{const a=document.createElement("div");a.classList.add("form-check"),a.innerHTML=`<input type="checkbox" class="form-check-input" id="${e.id}" value="${e.value}"><label class="form-check-label" for="${e.id}">${e.label}</label>`,t.appendChild(a)})}function animateValue(e,t,a,l,n="",i="",d=1){let c=a-t,r=t,o=a>t?1:-1,m=Math.abs(Math.floor(l/c*d)),u=document.getElementById(e),s=setInterval(function(){r+=o,u.innerHTML=`<span class="green-currency">${n}</span>${r.toLocaleString()}${i}`,r==a&&clearInterval(s)},m)}function calculateBudget(){let e=document.getElementById("project-type").value,t=parseInt(document.getElementById("pages-number").value),a=document.getElementById("design-level").value,l=document.getElementById("maintenance").value,n=document.getElementById("deadline").value,i=0,d=0,c=0;switch(e){case"site_institucional":i=1e3,c=200;break;case"ecommerce":i=3e3,c=300;break;case"blog":i=1500,c=200;break;case"app_mobile":i=5e3,c=500}d+=100*t,functionalities[e].forEach(e=>{document.getElementById(e.id).checked&&(d+=parseInt(document.getElementById(e.id).value))});switch(a){case"intermediate":d+=500;break;case"advanced":d+=1e3}switch(l){case"basic_support":d+=200,c+=100;break;case"full_support":d+=500,c+=200}switch(n){case"fast":d+=1e3;break;case"extended":d-=500}let r=i+d,o=-0;animateValue("result-amount",0,r,2e3,"R$ ","",o),animateValue("monthly-amount",0,c,2e3,"R$ "," por mês",o)}updateFunctionalities();
-
-        // Inicializa o mapa
-        var map = L.map('mapa-interativo').setView([-30.853974212174627, -51.80767728463423], 14); // Define a localização central e o nível de zoom
-
-        // Adiciona uma camada de mapa (OpenStreetMap)
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Adiciona um marcador no mapa
-        L.marker([-30.853974212174627, -51.80767728463423]).addTo(map)
-    </script>
-    </body>
+<div id=spinner class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+<div class=spinner></div>
+</div>
+<header>
+<div class="container-fluid px-5 d-none d-lg-block" style=background-color:#000>
+<div class="row gx-0">
+<div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+<div class="d-inline-flex align-items-center" style=height:45px>
+<small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Camaquã-RS, Rio Grande do Sul, Brasil</small>
+<small class=text-light><i class="fa fa-envelope-open me-2"></i>luisfilipidev@gmail.com</small>
+</div>
+</div>
+<div class="col-lg-4 text-center text-lg-end">
+<div class="d-inline-flex align-items-center" style=height:45px>
+<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target=_blank href="https://www.facebook.com/profile.php?id=100081163277933"><i class="fab fa-facebook-f fw-normal"></i></a>
+<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target=_blank href=https://wa.link/uozhdu><i class="bi bi-whatsapp"></i></a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<header id=home>
+<div class="container-fluid position-relative p-0">
+<nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+<a href=#home class="navbar-brand p-0">
+<img src=./imagens/Logo3.0.png width=220 height=50 alt="">
+</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarCollapse>
+<span class="fa fa-bars"></span>
+</button>
+<div class="collapse navbar-collapse" id=navbarCollapse style=padding:10px>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class="nav-link page-scroll" href=#sobre>Sobre</a>
+</li>
+<li class=nav-item>
+<a class="nav-link page-scroll" href=#diferencial>Diferenciais</a>
+</li>
+<li class=nav-item>
+<a class="nav-link page-scroll" href=#services>Serviços</a>
+</li>
+<li class=nav-item>
+<a class="nav-link page-scroll" href=#custo>Custos?</a>
+</li>
+<li class=nav-item>
+<a class="nav-link page-scroll" href=#testimonials>Depoimentos</a>
+</li>
+<li class=nav-item>
+<a class="nav-link page-scroll" href=#perguntas>Dúvidas?</a>
+</li>
+<li class=nav-item>
+<a class="nav-link page-scroll" href=#news>Blog</a>
+</li>
+<li class=nav-item>
+<a class="nav-link page-scroll" href=#contatos>Contato</a>
+</li>
+</ul>
+</div>
+</nav>
+<div id=header-carousel class="carousel slide carousel-fade" data-bs-ride=carousel>
+<div class=carousel-inner>
+<div class="carousel-item active">
+<img class=w-100 src=./imagens/Camaqua-Rota-Farroupilha-RS-13-640x427.jpg alt=Image>
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class=p-3 style=max-width:900px>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Seja bem-vindo(a) a Dev Sites Apps, minha empresa freelancer de desenvolvimento Web e Apps</h1>
+</div>
+</div>
+</div>
+<div class=carousel-item>
+<img class=w-100 src=./imagens/virtual.png alt=Image>
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class=p-3 style=max-width:900px>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Um site é a vitrine digital do seu negócio, acessível a qualquer momento e de qualquer lugar</h1>
+</div>
+</div>
+</div>
+<div class=carousel-item>
+<img class=w-100 src=./imagens/globo.jpg alt=Image>
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class=p-3 style=max-width:900px>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Ter um site proporciona credibilidade e confiança aos seus clientes, mostrando que você está presente no mundo online</h1>
+</div>
+</div>
+</div>
+<div class=carousel-item>
+<img class=w-100 src=./imagens/ferramenta.jpg alt=Image>
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class=p-3 style=max-width:900px>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Um site é uma poderosa ferramenta de marketing, permitindo que você promova seus produtos, serviços e valores de forma eficaz</h1>
+</div>
+</div>
+</div>
+<div class=carousel-item>
+<img class=w-100 src=./imagens/investir.jpg alt=Image>
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class=p-3 style=max-width:900px>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Ao investir em um site, você investe no crescimento futuro do seu negócio, preparando-se para os desafios e oportunidades do mundo digital</h1>
+</div>
+</div>
+</div>
+<div class=carousel-item>
+<img class=w-100 src=./imagens/historia.jpg alt=Image>
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class=p-3 style=max-width:900px>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Um site é mais do que uma presença online, é uma plataforma para contar a história da sua marca e se conectar emocionalmente com seu público</h1>
+</div>
+</div>
+</div>
+<div class=carousel-item>
+<img class=w-100 src=./imagens/edificios.avif alt=Image>
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class=p-3 style=max-width:900px>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Não importa o tamanho do seu negócio, um site é uma ferramenta essencial para competir e prosperar no mercado atual</h1>
+</div>
+</div>
+</div>
+</div>
+<button class=carousel-control-prev type=button data-bs-target=#header-carousel data-bs-slide=prev>
+<span class=carousel-control-prev-icon aria-hidden=true></span>
+<span class=visually-hidden>Previous</span>
+</button>
+<button class=carousel-control-next type=button data-bs-target=#header-carousel data-bs-slide=next>
+<span class=carousel-control-next-icon aria-hidden=true></span>
+<span class=visually-hidden>Next</span>
+</button>
+</div>
+</div>
+</header>
+<section>
+<div class="modal fade" id=searchModal tabindex=-1>
+<div class="modal-dialog modal-fullscreen">
+<div class=modal-content style=background:rgba(9,30,62,.7)>
+<div class="modal-header border-0">
+<button type=button class="btn bg-white btn-close" data-bs-dismiss=modal aria-label=Close></button>
+</div>
+<div class="modal-body d-flex align-items-center justify-content-center">
+<div class=input-group style=max-width:600px>
+<input class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+<button class="btn fundo-yellow px-4"><i class="bi bi-search"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<header>
+<div class="container-fluid facts py-5 pt-lg-0">
+<div class="container py-5 pt-lg-0" id=blocos-statics>
+<div class="row gx-0">
+<div id=bloco-static1 class="col-lg-4 wow zoomIn" data-wow-delay=0.1s>
+<div class="shadow d-flex align-items-center justify-content-center p-4" style=height:150px>
+<div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style=width:60px;height:60px>
+<i class="fa fa-users text-green"></i>
+</div>
+<div class=ps-4>
+<h5 class="text-white mb-0">Meus clientes</h5>
+<h1 class="text-white mb-0" data-toggle=counter-up>56</h1>
+</div>
+</div>
+</div>
+<div id=bloco-static2 class="col-lg-4 wow zoomIn" data-wow-delay=0.3s>
+<div class="shadow d-flex align-items-center justify-content-center p-4" style=height:150px>
+<div class="d-flex align-items-center justify-content-center rounded mb-2" style=width:60px;height:60px>
+<i class="fa fa-check text-white"></i>
+</div>
+<div class=ps-4>
+<h5 class="text-white mb-0">Projetos concluidos</h5>
+<h1 class="text-white mb-0" data-toggle=counter-up>56</h1>
+</div>
+</div>
+</div>
+<div id=bloco-static3 class="col-lg-4 wow zoomIn" data-wow-delay=0.3s>
+<div class="shadow d-flex align-items-center justify-content-center p-4" style=height:150px>
+<div class="d-flex align-items-center justify-content-center rounded mb-2" style=width:60px;height:60px>
+<i class="fa fa-check text-white"></i>
+</div>
+<div class=ps-4>
+<h5 class="text-white mb-0">Páginas construidas</h5>
+<h1 class="text-white mb-0" data-toggle=counter-up>185</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class=map-section>
+<div class=container>
+<h5 class="fw-bold text-green text-uppercase" style=text-align:center>Eu sai de uma cidade pequena do RS para grandes partes pelo nosso Brasil</h5>
+<h1 class="title mb-4 wow fadeInUp">Veja abaixo as cidades onde tenho o orgulho de ter contribuído com projetos de desenvolvimento web e apps para diversos clientes</h1>
+<div id=map class="map-container wow zoomIn"></div>
+</div>
+</section>
+<section id=sobre>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="container py-5">
+<div class="row g-5">
+<div class=col-lg-7>
+<div class="section-title position-relative pb-3 mb-5">
+<h1 class=mb-0>Olá, me chamo Luis Filipi e sou Desenvolvedor Web e de Aplicativos Híbridos</h1>
+<h5 class="fw-bold text-green text-uppercase">Nasce em São Lourenço do Sul, mas estou morando em Camaquã-RS, cidade que possui essa linda igreja Matriz São João Batista</h5>
+</div>
+<p class=mb-4>Sou um desenvolvedor web de Front-End focado em criar sites e aplicativos com o propósito claro de resolver desafios de visibilidade e marketing para empresas. Meu objetivo é não apenas melhorar a presença online de uma empresa, mas também encontrar soluções inovadoras que impulsionem seu crescimento e alcance.</p>
+<p class=mb-4>Embora valorize minha capacidade de resolver problemas de forma independente, aprendi que o trabalho em equipe é fundamental. Ao colaborar com outros talentos, posso ampliar minha perspectiva e aprimorar minhas habilidades.</p>
+<p class=mb-4>Desde que entrei no mundo do Front-End em outubro de 2023, tenho sido impulsionado pela minha criatividade e pela paixão por enfrentar desafios. A cada projeto, descubro novas maneiras de combinar funcionalidade e design para entregar soluções que não só atendam às necessidades do cliente, mas também superem suas expectativas.</p>
+<p class=mb-4>Estou comprometido em aprimorar continuamente minhas habilidades e conhecimentos ao longo deste ano, buscando novas oportunidades para expandir minha experiência no desenvolvimento Front-End.</p>
+<div class="row g-0 mb-3">
+<div class="col-sm-6 wow zoomIn" data-wow-delay=0.2s>
+<h5 class="fw-bold text-green text-uppercase">Tenho experiência em:</h5>
+<h5 class=mb-3><i class="fa fa-check text-green me-3"></i>Gestão de projetos</h5>
+<h5 class=mb-3><i class="fa fa-check text-green me-3"></i>Desenvolvimento web
+</h5>
+<h5 class=mb-3><i class="fa fa-check text-green me-3"></i>Desenvolvimento de software Híbridos</h5>
+<h5 class=mb-3><i class="fa fa-check text-green me-3"></i>Resolução de problemas</h5>
+</div>
+<a href=# id=button-link class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>Solicitar um orçamento gratuito</a>
+<div id=caixa-orcamento class=orcamento>
+<i class="bi bi-x-square close-btn"></i>
+<a target=_blank href="https://www.facebook.com/profile.php?id=100081163277933" class="btn fundo-yellow py-3 px-5 mt-3">Messenger</a>
+<a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3">WhatsApp</a>
+<a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">luisfilipidev@gmail.com</a>
+</div>
+</div>
+</div>
+<div class=col-lg-5 style=min-height:500px>
+<div class="position-relative h-100">
+<img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay=0.9s src=./imagens/Camaqua3.jpg style=object-fit:cover>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=introducao>
+<div>
+<div>
+<div>
+<h1 class="title mb-4 wow fadeInUp">Bem-vindo(a) à Dev Sites Apps</h1>
+<div class=container>
+<p class="wow fadeInUp" style=text-align:center;font-size:20px>Sou Luis Filipi, o criador da <strong style=color:#28a745>Dev</strong> <strong style=color:#da251d>Sites</strong> <strong style=color:#d6cf00>Apps</strong>, uma empresa dedicada a oferecer serviços de desenvolvimento de sites e aplicativos como freelancer. A Dev Sites Apps é a extensão da minha paixão por tecnologia e design, permitindo-me distribuir minha expertise e atender clientes com soluções web personalizadas. Cada projeto é uma oportunidade de traduzir a visão do cliente em uma presença online impactante e funcional.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div id=empresa>
+<section class=section>
+<div class=container>
+<div class="row align-items-center">
+<div class=col-md-7>
+<h1 class="title mb-4 wow fadeInUp" style=text-align:center>Sobre a <strong style=color:#28a745>Dev</strong> <strong style=color:#da251d>Sites</strong> <strong style=color:#d6cf00>Apps</strong></h1>
+<div class="screen-normal wow fadeInUp">
+<div class="wow zoomIn" id=mapa-interativo style=width:95%;height:500px></div>
+</div>
+</div>
+<div class="col-md-5 mobmartop30 1 div-empresa">
+<div class="tagline-v2 padleft30 wow fadeInUp">
+<h5 class="margin-top fw-bold" style=letter-spacing:2px>A <strong style=color:#28a745>Dev</strong> <strong style=color:#da251d>Sites</strong> <strong style=color:#d6cf00>Apps</strong> é uma empresa criada por mim, para representar meu trabalho como desenvolvedor freelancer de sites e aplicativos. Esta empresa reflete meu compromisso com a criação de soluções web personalizadas e de alta qualidade para meus clientes. Ao escolher a Dev Sites Apps, você está optando por uma empresa que valoriza a excelência e a inovação na construção de sites, com uma abordagem focada em atender às suas necessidades específicas.</h5>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+<div id=popup class=popup>
+copiado: <span id=phone-number-copied></span>
+</div>
+<section id=diferencial>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="container py-5">
+<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
+<h5 class="fw-bold text-green text-uppercase">Dev Sites Apps</h5>
+<h1 class=mb-0>Diferenciais que você encontra comigo</h1>
+</div>
+<div class="row g-5">
+<div class=col-lg-4>
+<div class="row g-5">
+<div class="col-12 wow zoomIn" data-wow-delay=0.2s>
+<div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style=width:60px;height:60px>
+<i class="bi bi-person-circle text-white"></i>
+</div>
+<h4>Foco na Experiência do Usuário</h4>
+<p class=mb-0>Coloco a experiência do usuário em primeiro lugar, garantindo interfaces intuitivas e amigáveis</p>
+</div>
+<div class="col-12 wow zoomIn" data-wow-delay=0.6s>
+<div id=icones-bloco class="text-red rounded d-flex align-items-center justify-content-center mb-3" style=width:60px;height:60px>
+<i class="gg-list text-white"></i>
+</div>
+<h4>Design Criativo e Funcional</h4>
+<p class=mb-0>Combino criatividade com funcionalidade para criar designs atraentes e eficazes.</p>
+</div>
+<div class="col-12 wow zoomIn" data-wow-delay=0.6s>
+<div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style=width:60px;height:60px>
+<i class="bi bi-hourglass-split text-white"></i>
+</div>
+<h4>Priorizar o Tempo do Cliente</h4>
+<p class=mb-0>Simplifico processos, reduzo esperas e ofereço soluções ágeis para o desenvolvimento de sua presença digital.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 wow zoomIn" data-wow-delay=0.9s style=min-height:350px>
+<div class="position-relative h-100">
+<img class="position-absolute w-100 h-100 rounded wow zoomIn" width=20 height=20 data-wow-delay=0.1s src=./imagens/grup.jpg style=object-fit:cover>
+</div>
+</div>
+<div class=col-lg-4>
+<div class="row g-5">
+<div class="col-12 wow zoomIn" data-wow-delay=0.4s>
+<div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style=width:60px;height:60px>
+<i class="bi bi-phone-fill text-white"></i>
+</div>
+<h4>Expertise em Tecnologias Híbridas</h4>
+<p class=mb-0>Tenho profundo conhecimento em tecnologias híbridas para oferecer soluções eficientes e escaláveis.</p>
+</div>
+<div class="col-12 wow zoomIn" data-wow-delay=0.8s>
+<div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style=width:60px;height:60px>
+<i class="bi bi-person-check-fill text-white"></i>
+</div>
+<h4>Abordagem Colaborativa</h4>
+<p class=mb-0>Valorizo a colaboração com meus clientes, garantindo que suas necessidades e expectativas sejam atendidas em cada etapa do projeto.</p>
+</div>
+<div class="col-12 wow zoomIn" data-wow-delay=0.8s>
+<div class="text-red rounded d-flex align-items-center justify-content-center mb-3" style=width:60px;height:60px>
+<i class="bi bi-gear-fill text-white"></i>
+</div>
+<h4>Gerencio sua hospedagem e manutenção continuamente</h4>
+<p class=mb-0>Fazendo você não se preocupar com quase nada, apenas com a ideia do seu próprio projeto.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=services>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="container py-5">
+<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
+<h5 class="fw-bold text-green text-uppercase">Dev Sites Apps</h5>
+<h1 class="title mb-4 wow fadeInUp">Meus serviços para você</h1>
+</div>
+<div class="row g-5" id=linha1>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.3s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="fa-solid fa-laptop-code"></i>
+</div>
+<h4 id=h4-white class=mb-3>Desenvolvimento de Sites Responsivos</h4>
+<p class=m-0>Crio sites profissionais e responsivos que se adaptam a diferentes dispositivos, oferecendo uma experiência de usuário otimizada.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.6s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="fab fa-android"></i>
+</div>
+<h4 id=h4-white class=mb-3>Desenvolvimento de Aplicativos Híbridos</h4>
+<p class=m-0>Desenvolvo aplicativos móveis híbridos utilizando tecnologias de Front-End e Frameworks, garantindo desempenho e funcionalidades de alta qualidade para usuários móveis.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.9s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="fa fa-code"></i>
+</div>
+<h4 id=h4-white class=mb-3>Otimização para SEO</h4>
+<p class=m-0>Implemento práticas de SEO (Search Engine Optimization) para ajudar você a melhorar sua visibilidade online e alcançar um melhor posicionamento nos resultados de busca.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.3s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="fa-solid fa-bug"></i>
+</div>
+<h4 id=h4-white class=mb-3>Resolução de Problemas no Front-End</h4>
+<p class=m-0>Ofereço serviços para identificar e corrigir bugs, responsividade UI/UX, compatibilidade do navegador, melhoria da acessibilidade, etc.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.6s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="bi bi-brush"></i>
+</div>
+<h4 id=h4-white class=mb-3>Logo Marca</h4>
+<p class=m-0>Crio sua logo gratuitamente com IA.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.9s>
+<div class="position-relative text-red rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+<h3 class="text-white mb-3">Envie um email para um orçamento</h3>
+<h5 class="text-white mb-0">luisfilipidev@gmail.com</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=construcao>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="container py-5">
+<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
+<h5 class="fw-bold text-green text-uppercase">Dev Sites Apps</h5>
+<h1 class="title mb-4 wow fadeInUp">Como posso construir sua presença?</h1>
+</div>
+<div class="row g-5" id=linha1>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.3s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="bi bi-google"></i>
+</div>
+<h4 class=mb-3>Google Sites</h4>
+<p class=m-0>O Google Sites é uma plataforma que permite criar sites usando modelos e elementos prontos, sem a necessidade de programar do zero. É uma opção simples para criar um site básico, mas pode ter limitações significativas em termos de personalização e funcionalidades avançadas.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.6s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="fa-brands fa-wix"></i>
+</div>
+<h4 class=mb-3>Wix</h4>
+<p class=m-0>O Wix é uma plataforma que oferece modelos e elementos prontos para criar sites de forma rápida e fácil, com maior capacidade de personalização em comparação com o Google Sites. Ele permite uma customização mais detalhada, mas pode envolver custos adicionais para recursos premium e personalização avançada.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.9s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="bi bi-wordpress"></i>
+</div>
+<h4 class=mb-3>WordPress</h4>
+<p class=m-0>O WordPress é uma das plataformas mais populares e flexíveis para criação de sites. Ele oferece uma ampla variedade de temas e plugins que permitem criar sites altamente personalizados e funcionais, sem a necessidade de programação avançada. O WordPress oferece maior flexibilidade e escalabilidade do que o Wix, mas também pode envolver custos adicionais para recursos premium e personalização avançada.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.3s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="bi bi-code-square"></i>
+</div>
+<h4 class=mb-3>Website Personalizado</h4>
+<p class=m-0>Desenvolvo sites personalizados que variam de simples a complexos, adaptados às suas necessidades específicas. Posso criar um site que reflete a identidade da sua marca e oferece a funcionalidade desejada.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.6s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="bi bi-cart"></i>
+</div>
+<h4 class=mb-3>Loja Online (E-commerce)</h4>
+<p class=m-0>Crio lojas online com recursos completos, incluindo exibição de produtos, promoções, carrinho de compras com cálculo total, localização interativa com mapa GPS, previsão do tempo e outros recursos avançados para uma experiência de compra envolvente e conveniente.</p>
+</div>
+</div>
+<div id=blocos-item class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay=0.6s>
+<div id=sub-bloco-item class="service-item rounded d-flex flex-column align-items-center justify-content-center text-center">
+<div class=service-icon>
+<i class="bi bi-person-circle"></i>
+</div>
+<h4 class=mb-3>Blog</h4>
+<p class=m-0>Desenvolvo blogs pessoais ou sites de notícias que são fáceis de gerenciar e atualizar. Posso criar um espaço onde você pode compartilhar suas ideias, publicar conteúdo regularmente e interagir com seus leitores de forma eficaz.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class=container id=id-container>
+<h1 class="title mb-4 wow fadeInUp" data-wow-delay=0.1s style=color:#000;text-align:center>Modelos de Sites</h1>
+<div class="button-container wow fadeInUp" data-wow-delay=0.1s>
+<button class=category-button data-category=all>Todos</button>
+<button class=category-button data-category=barber>Barbearia</button>
+<button class=category-button data-category=carp>Carpintaria</button>
+<button class=category-button data-category=dentist>Dentista</button>
+<button class=category-button data-category=lab>Laboratório</button>
+<button class=category-button data-category=logistic>Logística</button>
+<button class=category-button data-category=mercad>Mercado</button>
+<button class=category-button data-category=photo>Fotografia</button>
+<button class=category-button data-category=restaurant>Restaurante</button>
+<button class=category-button data-category=supermercad>Supermercado</button>
+</div>
+<div class=view-toggle>
+<button id=desktop-view class=active>Versão Desktop</button>
+<button id=mobile-view>Versão Mobile</button>
+</div>
+<div class=model-container>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=barber>
+<div class=desktop-view>
+<img src=Modelos/Capa/BRB.PNG alt="Modelo de Barbearia">
+<p>Modelo de Barbearia</p>
+<a href=Modelos/Barbearia/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src=Modelos/Barbearia/index.html frameborder=0></iframe>
+<video id=video-barber class=model-video controls>
+<source src=Vídeos/barbearia.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=carp>
+<div class=desktop-view>
+<img src=Modelos/Capa/CAP.PNG alt="Modelo de Carpintaria">
+<p>Modelo de Carpintaria</p>
+<a href=Modelos/Madeira/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src=Modelos/Madeira/index.html frameborder=0></iframe>
+<video id=video-carp class=model-video controls>
+<source src=Vídeos/carpint.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=dentist>
+<div class=desktop-view>
+<img src=Modelos/Capa/DENT.PNG alt="Modelo de Odontologia">
+<p>Modelo de Odontologia</p>
+<a href=Modelos/Dentcare/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src=Modelos/Dentcare/index.html frameborder=0></iframe>
+<video id=video-dentist class=model-video controls>
+<source src=Vídeos/dentista.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=lab>
+<div class=desktop-view>
+<img src=Modelos/Capa/lab.PNG alt="Modelo de Laboratório">
+<p>Modelo de Laboratório</p>
+<a href=Modelos/Lab/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src=Modelos/Lab/index.html frameborder=0></iframe>
+<video id=video-lab class=model-video controls>
+<source src=Vídeos/lab.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=logistic>
+<div class=desktop-view>
+<img src=Modelos/Capa/LE.PNG alt="Modelo de Logística">
+<p>Modelo de Logística</p>
+<a href="Modelos/Logistic Express/index.html" class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src="Modelos/Logistic Express/index.html" frameborder=0></iframe>
+<video id=video-logistic class=model-video controls>
+<source src=Vídeos/logistic.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=mercad>
+<div class=desktop-view>
+<img src=Modelos/Capa/Mercado.PNG alt="Modelo de Mercado">
+<p>Modelo de Mercado</p>
+<a href=Modelos/Fruitkha/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src=Modelos/Fruitkha/index.html frameborder=0></iframe>
+<video id=video-mercad class=model-video controls>
+<source src=Vídeos/mercado.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=photo>
+<div class=desktop-view>
+<img src=Modelos/Capa/PHOTO.PNG alt="Modelo de Fotografia">
+<p>Modelo de Estúdio de Fotografia</p>
+<a href=Modelos/Phozogy-Master/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src=Modelos/Phozogy-Master/index.html frameborder=0></iframe>
+<video id=video-photo class=model-video controls>
+<source src=Vídeos/photo.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=restaurant>
+<div class=desktop-view>
+<div class=image-wrapper>
+<img src=Modelos/Capa/REST.PNG alt="Modelo de Restaurante">
+</div>
+<div class=text-wrapper>
+<p>Modelo de Restaurante</p>
+<a href=Modelos/Restaurantly/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+</div>
+<iframe class=model-iframe src=Modelos/Restaurantly/index.html frameborder=0></iframe>
+<video class=model-video controls>
+<source src=Vídeos/restaurante.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=supermercad>
+<div class=desktop-view>
+<img src=Modelos/Capa/Supermercado.PNG alt="Modelo de Supermercado">
+<p>Modelo de Supermercado</p>
+<a href=Modelos/Biolife/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src=Modelos/Biolife/index.html frameborder=0></iframe>
+<video id=video-supermercad class=model-video controls>
+<source src=Vídeos/supermercado.mp4 type=video/mp4>
+</video>
+</div>
+</div>
+</div>
+<div class=divs-full-site-mobile>
+<p style=text-align:center;color:#000>Deslize o dedo sobre as imagens para visualizar o próximo slide ou toque em um dos botões</p>
+<div class=carousel-container>
+<div class=model-item-2>
+<img src=Modelos/Capa/REST.PNG alt="Modelo de Restaurante">
+<p>Modelo de Restaurante</p>
+<a href=Modelos/Restaurantly/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<div class=model-item-2>
+<img src=Modelos/Capa/BRB.PNG alt="Modelo de Barbearia">
+<p>Modelo de Barbearia</p>
+<a href=Modelos/Barbearia/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<div class=model-item-2>
+<img src=Modelos/Capa/LE.PNG alt="Modelo de Logística">
+<p>Modelo de Logística</p>
+<a href="Modelos/Logistic Express/index.html" class=view-full-site>Ver Site Completo</a>
+</div>
+<div class=model-item-2>
+<img src=Modelos/Capa/DENT.PNG alt="Modelo de Odontologia">
+<p>Modelo de Odontologia</p>
+<a href=Modelos/Dentcare/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<div class=model-item-2>
+<img src=Modelos/Capa/Mercado.PNG alt="Modelo de Mercado">
+<p>Modelo de Mercado</p>
+<a href=Modelos/Fruitkha/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<div class=model-item-2>
+<img src=Modelos/Capa/Supermercado.PNG alt="Modelo de Supermercado">
+<p>Modelo de Supermercado</p>
+<a href=Modelos/Biolife/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<div class=model-item-2>
+<img src=Modelos/Capa/PHOTO.PNG alt="Modelo de Fotografia">
+<p>Modelo de Estúdio de Fotografia</p>
+<a href=Modelos/Phozogy-Master/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+<div class=model-item-2>
+<img src=Modelos/Capa/CAP.PNG alt="Modelo de Carpintaria">
+<p>Modelo de Carpintaria</p>
+<a href=Modelos/Madeira/index.html class=view-full-site>Ver Site Completo</a>
+</div>
+</div>
+</div>
+</section>
+<section id=custo>
+<div id=empresa>
+<section class=section>
+<div class=container>
+<div class="row align-items-center">
+<div class=col-md-7>
+<h1 class="title mb-4 wow fadeInUp">E na questão de custos?</h1>
+<div class="screen-normal wow fadeInUp">
+<img src=./imagens/money.jpg alt="" class=img-fluid>
+</div>
+</div>
+<div class="col-md-5 mobmartop30 1 div-empresa">
+<div class="tagline-v2 padleft30 wow fadeInUp">
+<h5 class=margin-top style=letter-spacing:2px>Determino meus preços com base no consenso e de acordo com as necessidades específicas de cada cliente. Isso inclui o custo da hospedagem com domínio fornecido pela empresa, além do valor do serviço que representa o lucro para mim.</h5>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="container py-5">
+<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
+<h5 class="fw-bold text-uppercase">PLANOS DE PREÇOS</h5>
+<h1 class="title mb-4 wow fadeInUp">Ofereço Preços Competitivos para Meus Clientes</h1>
+</div>
+<div class="row g-0">
+<div class="col-lg-4 wow slideInUp" data-wow-delay=0.6s>
+<div class=rounded style=background-color:#fff>
+<div class="border-bottom py-4 px-5 mb-4">
+<h4 class=mb-1>Plano Básico</h4>
+<small class=text-uppercase>Para Sites de Uma Página</small>
+</div>
+<div class="p-5 pt-0">
+<h1 class="display-5 mb-3">
+<small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>1.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
+</h1>
+<div class="d-flex justify-content-between mb-3"><span>Design Básico</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Informações Essenciais</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Formulário de Contato</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>SEO Básico</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Suporte Técnico por Email</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-2"><span>Backup Semanal</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 200 / Mês</span></div>
+<a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 wow slideInUp" data-wow-delay=0.3s>
+<div class="bg-white rounded shadow position-relative" style=z-index:1>
+<div class="border-bottom py-4 px-5 mb-4">
+<h4 class=mb-1>Plano Institucional</h4>
+<small class=text-uppercase>Para Sites Corporativos</small>
+</div>
+<div class="p-5 pt-0">
+<h1 class="display-5 mb-3">
+<small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>3.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
+</h1>
+<div class="d-flex justify-content-between mb-3"><span>Design Personalizado</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Páginas Ilimitadas</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Galeria de Fotos</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>SEO Avançado</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Blog Integrado</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Analytics & Relatórios</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Suporte Prioritário</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Atualizações Mensais</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-2"><span>Treinamento</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 300 / Mês</span></div>
+<a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 wow slideInUp" data-wow-delay=0.9s>
+<div class=rounded style=background-color:#fff>
+<div class="border-bottom py-4 px-5 mb-4">
+<h4 class=mb-1>Plano E-commerce</h4>
+<small class=text-uppercase>Para Lojas Online</small>
+</div>
+<div class="p-5 pt-0">
+<h1 class="display-5 mb-3">
+<small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>5.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
+</h1>
+<div class="d-flex justify-content-between mb-3"><span>Carrinho de Compras</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Sistema de Pagamento</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Gerenciamento de Produtos</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>SEO Completo</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Marketing por Email</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Analytics & Relatórios Avançados</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Suporte Premium</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Atualizações Semanais</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-3"><span>Treinamento Avançado</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-2"><span>Integração com Chatbot</span><i class="fa fa-check pt-1"></i></div>
+<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 500 / Mês</span></div>
+<a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="container py-5">
+<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
+<h5 class="fw-bold text-uppercase">CALCULADORA DE ORÇAMENTO</h5>
+<h1 class="title mb-4 wow fadeInUp">Estime o Custo do Seu Projeto</h1>
+</div>
+<div class="calculator-container rounded shadow p-5 bg-white">
+<form id=budget-form>
+<div class="form-group mb-4">
+<label for=project-type>Tipo de Projeto</label>
+<select id=project-type class=form-control onchange=updateFunctionalities()>
+<option value=site_institucional>Site Institucional</option>
+<option value=ecommerce>E-commerce</option>
+<option value=blog>Blog</option>
+<option value=app_mobile>Aplicativo Móvel</option>
+</select>
+</div>
+<div class="form-group mb-4">
+<label for=pages-number>Número de Páginas</label>
+<input type=number id=pages-number class=form-control min=1 value=1>
+</div>
+<div class="form-group mb-4">
+<label>Funcionalidades Adicionais</label>
+<div id=additional-features>
+</div>
+</div>
+<div class="form-group mb-4">
+<label for=design-level>Nível de Design</label>
+<select id=design-level class=form-control>
+<option value=basic>Básico</option>
+<option value=intermediate>Intermediário</option>
+<option value=advanced>Avançado</option>
+</select>
+</div>
+<div class="form-group mb-4">
+<label for=maintenance>Manutenção e Suporte</label>
+<select id=maintenance class=form-control>
+<option value=none>Nenhum</option>
+<option value=basic_support>Suporte Básico</option>
+<option value=full_support>Suporte Completo</option>
+</select>
+</div>
+<div class="form-group mb-4">
+<label for=deadline>Prazo de Entrega</label>
+<select id=deadline class=form-control>
+<option value=normal>Normal</option>
+<option value=fast>Rápido</option>
+<option value=extended>Estendido</option>
+</select>
+</div>
+<button type=button class="btn fundo-yellow py-3 px-5 mt-3" onclick=calculateBudget()>Calcular Orçamento</button>
+</form>
+<div id=budget-result class="result mt-5 text-center">
+<h3 style=color:#000>Seu Orçamento Estimado</h3>
+<p id=result-amount class=display-4><span class=green-currency>R$ </span>0,00</p>
+<p id=monthly-amount class=display-6><span class=green-currency>R$ </span>0,00 por mês</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="container py-5">
+<div class="row g-5">
+<div class=col-lg-7>
+<div class="section-title position-relative pb-3 mb-5">
+<h5 class="fw-bold text-green text-uppercase">Solicite um Orçamento</h5>
+<h1 class=mb-0>Precisa de um orçamento grátis? Sinta-se à vontade para entrar em contato conosco</h1>
+</div>
+<div class="row gx-3">
+<div class="col-sm-6 wow zoomIn" data-wow-delay=0.2s>
+<h5 class=mb-4><i class="fa fa-reply text-green me-3"></i>Responder dentro de 13 horas - 08:00AM - 20:00PM</h5>
+</div>
+</div>
+<p class=mb-4>Entre em contato conosco através pelo nosso Messenger do Facebook, pelo nosso Email ou pelo nosso líder da equipe de desenvolvimento Web e Apps, que te espera pelo WhatsApp.</p>
+<a href=# id=button-link-2 class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>Solicitar um Orçamento</a>
+<div id=caixa-orcamento-2 class=orcamento>
+<i class="bi bi-x-square close-btn"></i>
+<a target=_blank href="https://www.facebook.com/profile.php?id=100081163277933" class="btn fundo-yellow py-3 px-5 mt-3">Messenger</a>
+<a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3">WhatsApp</a>
+<a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">luisfilipidev@gmail.com</a>
+</div>
+</div>
+<div class=col-lg-5 id=coluna-blocs>
+<a target=_blank href="https://www.facebook.com/profile.php?id=100081163277933" class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>Messenger</a>
+<a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">luisfilipidev@gmail.com</a>
+<a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>WhatsApp - Luis Filipi</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=testimonials>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style=max-width:600px>
+<h5 class="fw-bold text-green text-uppercase">Alguns Depoimentos...</h5>
+<h1 class="title mb-4 wow fadeInUp">O que os meus primeiros clientes dizem sobre meus serviços digitais</h1>
+</div>
+<div class=testimonial-container>
+<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay=0.6s>
+<div class="testimonial-item my-4">
+<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+<img class="img-fluid rounded" src=./imagens/user2.png style=width:60px;height:60px>
+<div class=ps-4>
+<h4 class="text-green mb-1">Sandra Regina Oliveira</h4>
+<small class="text-uppercase text-yellow">Vendedora de Produtos</small>
+</div>
+</div>
+<div class="pt-4 pb-5 px-5" id=text-black>
+"Como vendedora de produtos, contar com a Dev Sites Apps do Sul foi uma decisão transformadora para o meu negócio. Antes de trabalhar com eles, eu tinha dificuldades em promover meus produtos de forma eficaz online. No entanto, desde que a Dev Sites Apps desenvolveu nosso site e nos orientou sobre estratégias digitais, tenho visto um crescimento significativo nas vendas e na visibilidade da minha marca."
+</div>
+</div>
+<div class="testimonial-item my-4">
+<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+<img class="img-fluid rounded" src=./imagens/user3.avif style=width:60px;height:60px>
+<div class=ps-4>
+<h4 class="text-green mb-1">Fabrício Luiz Santos</h4>
+<small class="text-uppercase text-yellow">Barbeiro</small>
+</div>
+</div>
+<div class="pt-4 pb-5 px-5" id=text-black>
+"Como proprietário de uma barbearia, sempre busco maneiras de aprimorar minha presença online e atrair mais clientes para o meu estabelecimento. Foi quando descobri a Dev Sites Apps. Eles não apenas desenvolveram um site profissional e elegante para minha barbearia, mas também implementaram estratégias inteligentes de marketing digital."
+</div>
+</div>
+<div class="testimonial-item my-4">
+<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+<img class="img-fluid rounded" src=./imagens/user1.png style=width:60px;height:60px>
+<div class=ps-4>
+<h4 class="text-green mb-1">Marcos Antônio Silva</h4>
+<small class="text-uppercase text-yellow">Mecânico</small>
+</div>
+</div>
+<div class="pt-4 pb-5 px-5" id=text-black>
+"Como mecânico, sei que ter uma presença online forte é essencial para atrair novos clientes e construir uma reputação sólida no mercado. Foi por isso que escolhi trabalhar com a Dev Sites Apps para desenvolver nosso site e implementar estratégias de marketing digital."
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=accordion-1 id=perguntas>
+<div class=container>
+<div class=row>
+<div class="col-lg-12 wow fadeInUp">
+<h1 class="title mb-4 wow fadeInUp">Possíveis dúvidas</h1>
+</div>
+</div>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="row justify-content-center">
+<div class=col-lg-8>
+<div class=accordion id=accordionExample>
+<h4>Sobre a Empresa:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingSix>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapseSix aria-expanded=true aria-controls=collapseSix>
+Quando começou a Dev Sites Apps?
+</button>
+</h4>
+</div>
+<div id=collapseSix class="collapse show" aria-labelledby=headingSix data-parent=#accordionExample>
+<div class="card-body branco">
+A Dev Sites Apps foi fundada em 16 de Setembro de 2023.
+</div>
+</div>
+</div>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingOne>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left" type=button data-toggle=collapse data-target=#collapseOne aria-expanded=false aria-controls=collapseOne>
+Quais são os valores e a missão da Dev Sites Apps?
+</button>
+</h4>
+</div>
+<div id=collapseOne class=collapse aria-labelledby=headingOne data-parent=#accordionExample>
+<div class="card-body branco">
+Meus valores incluem comprometimento com a qualidade, acessibilidade e satisfação do cliente. Minha missão é oferecer presença digital de qualidade para empreendedores de todos os portes.
+</div>
+</div>
+</div>
+<h4>Serviços e Produtos - Principais características e benefícios:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingTwo>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapseTwo aria-expanded=false aria-controls=collapseTwo>
+Quais são as principais características e benefícios dos meus serviços/produtos?
+</button>
+</h4>
+</div>
+<div id=collapseTwo class=collapse aria-labelledby=headingTwo data-parent=#accordionExample>
+<div class="card-body branco">
+Ofereço administração de hospedagem de sites com suporte abrangente e garantia de qualidade.
+</div>
+</div>
+</div>
+<h4>Processo de Trabalho:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingthree>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapsethree aria-expanded=false aria-controls=collapsethree>
+Como funciona o processo de desenvolvimento de sites/aplicativos comigo?
+</button>
+</h4>
+</div>
+<div id=collapsethree class=collapse aria-labelledby=headingthree data-parent=#accordionExample>
+<div class="card-body branco">
+Minha abordagem inclui análise de requisitos, design, desenvolvimento, testes e lançamento. Garanto suporte abrangente em todas as etapas.
+</div>
+</div>
+</div>
+<h4>Preços e Orçamento:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingfour>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapsefour aria-expanded=false aria-controls=collapsefour>
+Como são determinados os preços dos seus serviços?
+</button>
+</h4>
+</div>
+<div id=collapsefour class=collapse aria-labelledby=headingfour data-parent=#accordionExample>
+<div class="card-body branco">
+Os preços são personalizados com base nas necessidades específicas do cliente, considerando custos como hospedagem, domínio e tempo de desenvolvimento.
+</div>
+</div>
+</div>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=extra2>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#extradois aria-expanded=false aria-controls=extradois>
+Quais são os métodos de pagamento aceitos?
+</button>
+</h4>
+</div>
+<div id=extradois class=collapse aria-labelledby=extra2 data-parent=#accordionExample>
+<div class="card-body branco">
+Aceito pagamento via PIX e PayPal para conveniência dos meus clientes.
+</div>
+</div>
+</div>
+<h4>Suporte e Manutenção:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingfive>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapsefive aria-expanded=false aria-controls=collapsefive>
+Oferece suporte técnico após o lançamento do projeto?
+</button>
+</h4>
+</div>
+<div id=collapsefive class=collapse aria-labelledby=headingfive data-parent=#accordionExample>
+<div class="card-body branco">
+Sim, garanto suporte contínuo desde o início até o término da nossa parceria.
+</div>
+</div>
+</div>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=extra4>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#extraquatro aria-expanded=false aria-controls=extraquatro>
+Como funciona o suporte técnico e a manutenção de sites/aplicativos?
+</button>
+</h4>
+</div>
+<div id=extraquatro class=collapse aria-labelledby=extra4 data-parent=#accordionExample>
+<div class="card-body branco">
+Estou disponível para qualquer alteração, atualização ou modificação necessária nos sites/aplicativos, garantindo funcionamento contínuo e eficiente.
+</div>
+</div>
+</div>
+<h4>Tecnologias Utilizadas:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingseven>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapseseven aria-expanded=false aria-controls=collapseseven>
+Quais tecnologias utiliza para o desenvolvimento de sites/aplicativos?
+</button>
+</h4>
+</div>
+<div id=collapseseven class=collapse aria-labelledby=headingseven data-parent=#accordionExample>
+<div class="card-body branco">
+Utilizo uma variedade de frameworks e bibliotecas modernas para garantir desempenho, segurança e funcionalidade nos meus projetos.
+</div>
+</div>
+</div>
+<h4>Parcerias e Colaborações:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingeight>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapseeight aria-expanded=false aria-controls=collapseeight>
+Está aberto a parcerias ou colaborações com outras empresas?
+</button>
+</h4>
+</div>
+<div id=collapseeight class=collapse aria-labelledby=headingeight data-parent=#accordionExample>
+<div class="card-body branco">
+Sim, busco parcerias estratégicas que beneficiem ambas as partes.
+</div>
+</div>
+</div>
+<h4>Privacidade e Segurança:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingnine>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapsenine aria-expanded=false aria-controls=collapsenine>
+Como protege os dados dos clientes?
+</button>
+</h4>
+</div>
+<div id=collapsenine class=collapse aria-labelledby=headingnine data-parent=#accordionExample>
+<div class="card-body branco">
+Utilizo medidas de segurança avançadas, incluindo criptografia SSL, firewalls e monitoramento constante para proteger os dados dos meus clientes.
+</div>
+</div>
+</div>
+<h4>Contato e Suporte:</h4>
+<div class="card wow fadeInUp">
+<div class="card-header branco" id=headingten>
+<h4 class=mb-0>
+<button class="btn btn-link btn-block text-left collapsed" type=button data-toggle=collapse data-target=#collapseten aria-expanded=false aria-controls=collapseten>
+Qual é o melhor canal para fazer perguntas adicionais ou agendar uma consulta?
+</button>
+</h4>
+</div>
+<div id=collapseten class=collapse aria-labelledby=headingten data-parent=#accordionExample>
+<div class="card-body branco">
+Recomendo entrar em contato comigo via Messenger do Facebook ou WhatsApp para obter assistência imediata.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=porqueumsite>
+<div class="container-xxl py-5">
+<div class="container px-lg-5">
+<div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay=0.1s>
+<h1 class="title mb-4 wow fadeInUp">Mas, por que ter um site como <span id=span-color>presença digital </span>hoje em dia?</h1>
+<p id=p-texto class="p-heading branco textinho" style=text-align:center;font-size:20px>Bom no mundo cada vez mais digital em que vivemos, a presença online se tornou essencial para o sucesso de qualquer negócio. Ter um site bem projetado e funcional não é mais um luxo, mas sim uma necessidade para empresas de todos os tamanhos e setores. Aqui estão algumas razões convincentes pelas quais investir em um site é crucial nos dias de hoje:</p>
+</div>
+<div>
+<h5 class="wow fadeInUp" data-wow-delay=1s><span id=span-color>Alcance Global</span>: Um site oferece a oportunidade de alcançar um público global 24 horas por dia, 7 dias por semana. Não há fronteiras geográficas, permitindo que sua empresa seja acessada por clientes em qualquer lugar do mundo.</h5>
+<h5 class="wow fadeInUp" data-wow-delay=1.5s><span id=span-color>Credibilidade e Profissionalismo</span>: Um site bem projetado transmite credibilidade e profissionalismo para os clientes em potencial. É uma maneira de estabelecer uma impressão positiva desde o primeiro contato, mostrando que sua empresa está séria e comprometida com a excelência.</h5>
+<h5 class="wow fadeInUp" data-wow-delay=2s><span id=span-color>Informações Acessíveis</span>: Seus clientes podem encontrar facilmente informações sobre seus produtos, serviços, horários de funcionamento, localização e formas de contato através do seu site. Isso proporciona conveniência e transparência, construindo confiança e facilitando o processo de tomada de decisão.</h5>
+<h5 class="wow fadeInUp" data-wow-delay=2.5s><span id=span-color>Marketing Eficiente</span>: Um site serve como uma poderosa ferramenta de marketing, permitindo que você promova seus produtos e serviços de forma eficaz. Você pode utilizar estratégias de SEO (Otimização de Mecanismos de Busca) publicidade online, redes sociais e conteúdo relevante para atrair e engajar seu público-alvo.</h5>
+<h5 class="wow fadeInUp" data-wow-delay=2.8s><span id=span-color>Facilidade de Atualização</span>: Ao contrário de materiais impressos, um site pode ser facilmente atualizado e modificado conforme necessário, sem os custos e inconvenientes associados à impressão. Isso garante que suas informações estejam sempre atualizadas e precisas para seus clientes.</h5>
+<h5 class="wow fadeInUp" data-wow-delay=3s><span id=span-color>Concorrência</span>: Em um mercado competitivo, ter um site pode ser o diferencial entre sua empresa e a concorrência. Seus concorrentes provavelmente já têm presença online, então é essencial que você também esteja presente para não ficar para trás</h5>
+</div>
+</div>
+</div>
+</section>
+<article id=news>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+<div class="container py-5">
+<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
+<h5 class="fw-bold text-uppercase" id=color-tit>Informações importantes recomendadas para você</h5>
+<h1 class="title mb-4 wow fadeInUp">Com o meu mais recente mini Blog, feito com muita dedicação</h1>
+</div>
+<div class="row g-5">
+<div class="col-lg-4 wow slideInUp" data-wow-delay=0.3s>
+<div class="blog-item bg-light rounded overflow-hidden">
+<div class="blog-img position-relative overflow-hidden">
+<img class=img-fluid src=./imagens/internet.jpg alt="">
+</div>
+<div class=p-4 style=background-color:#fff>
+<div class="d-flex mb-3">
+<small class=me-3><i class="far fa-user text-green me-2"></i>Dev Sites Apps: Luis Filipi W.N</small>
+<small><i class="far fa-calendar-alt text-green me-2"></i>16, Abril 2024</small>
+</div>
+<h4 class=mb-3>Como Construir uma Presença Digital para seu Negócio com Ajuda da Internet?</h4>
+<p>No mundo atual, ter uma presença digital forte é essencial para o sucesso de qualquer negócio. Com o poder... Nesta matéria, vamos explorar algumas estratégias simples e eficazes para ajudá-lo a construir uma presença digital robusta para o seu negócio, aproveitando ao máximo o potencial da internet.</p>
+<a class=text-uppercase style=color:#000 href=./noticia.html>Lê matéria <i class="bi bi-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<section>
+<div class=wrapper id=cookie-banner>
+<header>
+<i class="fas fa-cookie" id=icone-cookie></i>
+<h2>Utilizamos cookies</h2>
+</header>
+<div class=data>
+<p>Para garantir a melhor experiência em nosso site. Ao continuar navegando, você concorda com o uso de cookies conforme descrito em nossa <a href=./cookies.html>Política de Cookies</a>.</p>
+</div>
+<div class=buttons>
+<button id=acceptBtn class=button onclick=acceptCookies()>Aceitar</button>
+<button id=declineBtn class=button onclick=rejectCookies()>Rejeitar</button>
+</div>
+</div>
+</section>
+</main>
+<footer id=contatos>
+<div class="container-fluid footer position-relative text-white-50 py-5 wow fadeIn" data-wow-delay=0.1s>
+<div class=container>
+<div class="row g-5 py-5">
+<div class="col-lg-6 pe-lg-5">
+<a href=index.html class=navbar-brand>
+<h1 class="h1 mb-0"><img src=./imagens/Logo3.0.png width=300 height=50 alt=""></h1>
+</a>
+<p class="fs-5 mb-4 text-white margin-top">Dev Sites Apps é uma empresa freelancer de desenvolvimento digital sediada em Camaquã-RS, no estado do Rio Grande do Sul, especializada na criação de sites e aplicativos híbridos de alta qualidade.</p>
+<p class=text-white><i class="fa fa-map-marker-alt me-2"></i>Camaquã-RS, Rio Grande do Sul, Brasil</p>
+<p class=text-white><i class="fa fa-envelope me-2"></i>luisfilipidev@gmail.com</p>
+<div class="d-flex mt-4">
+<a target=_blank class="btn btn-lg-square fundo-yellow me-2" target=_blank href=https://wa.link/uozhdu><i class="bi bi-whatsapp"></i></a>
+<a target=_blank class="btn btn-lg-square fundo-yellow me-2" target=_blank href="https://www.facebook.com/profile.php?id=100081163277933"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+<div class="section-title section-title-sm position-relative pb-3 mb-4">
+<h3 class="text-light mb-0">Nossas Políticas</h3>
+</div>
+<div class="link-animated d-flex flex-column justify-content-start">
+<a href=./cookies.html id=p-link>
+<p class=text-green>Política de Cookies</p>
+</a>
+<a href="./política de privacidade.html" id=p-link>
+<p class="p-small text-green">Política de Privacidade</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid copyright text-white-50 py-4" id=copyright>
+<div class=container>
+<div class=row>
+<div class="col-md-6 text-center text-md-start">
+<p class=mb-0>&copy;<span>Copyright
+<script>document.write((new Date).getFullYear())</script> <a href=#>Dev Sites Apps</a>. Todos os direitos reservados.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<a href=# class="btn btn-lg fundo-yellow btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+<script src=https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js></script>
+<script src=https://unpkg.com/leaflet/dist/leaflet.js></script>
+<script src=https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js></script>
+<script src=https://unpkg.com/leaflet.polyline.snakeanim.js></script>
+<script src=https://code.jquery.com/jquery-3.4.1.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js></script>
+<script src=lib/wow/wow.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js></script>
+<script src=lib/easing/easing.min.js></script>
+<script src=js/jquery.easing.min.js></script>
+<script src=lib/waypoints/waypoints.min.js></script>
+<script src=lib/counterup/counterup.min.js></script>
+<script src=lib/owlcarousel/owl.carousel.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js></script>
+<script src=plugins/shuffle/shuffle.min.js></script>
+<script src=https://kit.fontawesome.com/6c999c6add.js crossorigin=anonymous></script>
+<script src=js/main.js></script>
+<script src=js/index.js></script>
+<script>document.querySelectorAll(".model-item-2 video").forEach((e=>{e.addEventListener("click",(function(){e.requestFullscreen?e.requestFullscreen():e.mozRequestFullScreen?e.mozRequestFullScreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():e.msRequestFullscreen&&e.msRequestFullscreen()}))})),$(document).ready((function(){$(".carousel-container").slick({slidesToShow:1,slidesToScroll:1,arrows:!0,prevArrow:'<button type="button" class="slick-prev">&#8249;</button>',nextArrow:'<button type="button" class="slick-next">&#8250;</button>',responsive:[{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1}}]})}));const functionalities={site_institucional:[{id:"seo-optimization",label:"Otimização SEO",value:300},{id:"contact-form",label:"Formulário de Contato",value:100}],ecommerce:[{id:"payment-gateway",label:"Integração com Gateway de Pagamento",value:500},{id:"product-management",label:"Gerenciamento de Produtos",value:400}],blog:[{id:"comment-system",label:"Sistema de Comentários",value:200},{id:"content-scheduling",label:"Agendamento de Conteúdo",value:150}],app_mobile:[{id:"push-notifications",label:"Notificações Push",value:300},{id:"in-app-purchases",label:"Compras In-App",value:400}]};function updateFunctionalities(){const e=document.getElementById("project-type").value,t=document.getElementById("additional-features");t.innerHTML="",functionalities[e].forEach((e=>{const a=document.createElement("div");a.classList.add("form-check"),a.innerHTML=`<input type="checkbox" class="form-check-input" id="${e.id}" value="${e.value}"><label class="form-check-label" for="${e.id}">${e.label}</label>`,t.appendChild(a)}))}function animateValue(e,t,a,n,l="",o="",c=1){let i=a-t,s=t,u=a>t?1:-1,r=Math.abs(Math.floor(n/i*c)),d=document.getElementById(e),m=setInterval((function(){s+=u,d.innerHTML=`<span class="green-currency">${l}</span>${s.toLocaleString()}${o}`,s==a&&clearInterval(m)}),r)}function calculateBudget(){let e=document.getElementById("project-type").value,t=parseInt(document.getElementById("pages-number").value),a=document.getElementById("design-level").value,n=document.getElementById("maintenance").value,l=document.getElementById("deadline").value,o=0,c=0,i=0;switch(e){case"site_institucional":o=1e3,i=200;break;case"ecommerce":o=3e3,i=300;break;case"blog":o=1500,i=200;break;case"app_mobile":o=5e3,i=500}switch(c+=100*t,functionalities[e].forEach((e=>{document.getElementById(e.id).checked&&(c+=parseInt(document.getElementById(e.id).value))})),a){case"intermediate":c+=500;break;case"advanced":c+=1e3}switch(n){case"basic_support":c+=200,i+=100;break;case"full_support":c+=500,i+=200}switch(l){case"fast":c+=1e3;break;case"extended":c-=500}animateValue("result-amount",0,o+c,2e3,"R$ ","",-0),animateValue("monthly-amount",0,i,2e3,"R$ "," por mês",-0)}updateFunctionalities();var map=L.map("mapa-interativo").setView([-30.853974212174627,-51.80767728463423],14);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map),L.marker([-30.853974212174627,-51.80767728463423]).addTo(map)</script>
+</body>
 </html>
