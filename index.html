@@ -27,7 +27,8 @@
 <link href=lib/owlcarousel/assets/owl.carousel.min.css rel=stylesheet>
 <link href=css/bootstrap.min.css rel=stylesheet>
 <link href=css/style.css rel=stylesheet>
-<style>html{scroll-behavior:smooth}.button-container{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.category-button{padding:10px 20px;margin:5px;cursor:pointer;background-color:#f5f5f5;border:1px solid #ddd;border-radius:5px;transition:.3s;color:#000}.category-button:hover{background-color:#da251d}#introdução{display:flex;justify-content:center}strong{color:#28a745;text-shadow:0 0 1px #000}#testimonials{height:100%;overflow:hidden}#mapa-interativo{border-radius:10px;box-shadow:0 0 5px #000}</style>
+<style>html{scroll-behavior:smooth}.button-container{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.category-button{padding:10px 20px;margin:5px;cursor:pointer;background-color:#f5f5f5;border:1px solid #ddd;border-radius:5px;transition:.3s;color:#000}.category-button:hover{background-color:#da251d}#introdução{display:flex;justify-content:center}strong{color:#28a745;text-shadow:0 0 1px #000}#testimonials{height:100%;overflow:hidden}#mapa-interativo{border-radius:10px;box-shadow:0 0 5px #000}
+</style>
 </head>
 <body>
 <div id=spinner class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -497,6 +498,29 @@ copiado: <span id=phone-number-copied></span>
 </div>
 </div>
 </section>
+<section class="container-fluid py-5 section-prazo wow fadeInUp" data-wow-delay="0.1s">
+<div class="content">
+<h1>Seu site institucional entregue em uma semana ou menos! Comprometo em fornecer uma solução rápida e de alta qualidade, garantindo que seu projeto esteja online em tempo recorde e pronto para uso. Esta agilidade é o que diferencia meus serviços e assegura que você tenha a presença digital que merece.</h1>
+</div>
+<div id="countdown-1" class="countdown">
+<div class="countdown-item">
+<span id="days-1">7</span>
+<p>Dias</p>
+</div>
+<div class="countdown-item">
+<span id="hours-1">00</span>
+<p>Horas</p>
+</div>
+<div class="countdown-item">
+<span id="minutes-1">00</span>
+<p>Minutos</p>
+</div>
+<div class="countdown-item">
+<span id="seconds-1">00</span>
+<p>Segundos</p>
+</div>
+</div>    
+</section>
 <section>
 <div class=container id=id-container>
 <h1 class="title mb-4 wow fadeInUp" data-wow-delay=0.1s style=color:#000;text-align:center>Modelos de Sites</h1>
@@ -505,6 +529,7 @@ copiado: <span id=phone-number-copied></span>
 <button class=category-button data-category=barber>Barbearia</button>
 <button class=category-button data-category=carp>Carpintaria</button>
 <button class=category-button data-category=dentist>Dentista</button>
+<button class=category-button data-category=fast>Fast-Links</button>
 <button class=category-button data-category=lab>Laboratório</button>
 <button class=category-button data-category=logistic>Logística</button>
 <button class=category-button data-category=mercad>Mercado</button>
@@ -548,6 +573,17 @@ copiado: <span id=phone-number-copied></span>
 <iframe class=model-iframe src=Modelos/Dentcare/index.html frameborder=0></iframe>
 <video id=video-dentist class=model-video controls>
 <source src=Vídeos/dentista.mp4 type=video/mp4>
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=fast>
+<div class=desktop-view>
+<img src="Modelos/Capa/FSTL.PNG" alt="Modelo de Odontologia">
+<p>Modelo de Fast-Links</p>
+<a href="Modelos/Fast-Links/index.html" class=view-full-site>Ver Site Completo</a>
+</div>
+<iframe class=model-iframe src=Modelos/Fast-Links/index.html frameborder=0></iframe>
+<video id=video-dentist class=model-video controls>
+<source src="Vídeos/FAST.mp4" type=video/mp4>
 </video>
 </div>
 <div class="model-item wow fadeInUp" data-wow-delay=0.3s data-category=lab>
@@ -701,7 +737,7 @@ copiado: <span id=phone-number-copied></span>
 <div class=rounded style=background-color:#fff>
 <div class="border-bottom py-4 px-5 mb-4">
 <h4 class=mb-1>Plano Básico</h4>
-<small class=text-uppercase>Para Sites de Uma Página</small>
+<small class=text-uppercase>Para Sites de Uma Página (Landing Page)</small>
 </div>
 <div class="p-5 pt-0">
 <h1 class="display-5 mb-3">
@@ -715,7 +751,7 @@ copiado: <span id=phone-number-copied></span>
 <div class="d-flex justify-content-between mb-3"><span>Suporte Técnico por Email</span><i class="fa fa-check pt-1"></i></div>
 <div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
 <div class="d-flex justify-content-between mb-2"><span>Backup Semanal</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 200 / Mês</span></div>
+<div class="d-flex justify-content-between mb-2"><span style="color: #000; font-size: 17px;">Mensalidade:</span><span style="color: #28a745; font-size: 17px;">R$ 200 / Mês</span></div>
 <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
 </div>
 </div>
@@ -740,7 +776,7 @@ copiado: <span id=phone-number-copied></span>
 <div class="d-flex justify-content-between mb-3"><span>Suporte Prioritário</span><i class="fa fa-check pt-1"></i></div>
 <div class="d-flex justify-content-between mb-3"><span>Atualizações Mensais</span><i class="fa fa-check pt-1"></i></div>
 <div class="d-flex justify-content-between mb-2"><span>Treinamento</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 300 / Mês</span></div>
+<div class="d-flex justify-content-between mb-2"><span style="color: #000; font-size: 17px;">Mensalidade:</span><span style="color: #28a745; font-size: 17px;">R$ 300 / Mês</span></div>
 <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
 </div>
 </div>
@@ -766,8 +802,7 @@ copiado: <span id=phone-number-copied></span>
 <div class="d-flex justify-content-between mb-3"><span>Suporte Premium</span><i class="fa fa-check pt-1"></i></div>
 <div class="d-flex justify-content-between mb-3"><span>Atualizações Semanais</span><i class="fa fa-check pt-1"></i></div>
 <div class="d-flex justify-content-between mb-3"><span>Treinamento Avançado</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Integração com Chatbot</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 500 / Mês</span></div>
+<div class="d-flex justify-content-between mb-2"><span style="color: #000; font-size: 17px;">Mensalidade:</span><span style="color: #28a745; font-size: 17px;">R$ 500 / Mês</span></div>
 <a href="mailto:luisfilipidev@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
 </div>
 </div>
@@ -775,6 +810,29 @@ copiado: <span id=phone-number-copied></span>
 </div>
 </div>
 </div>
+</section>
+<section class="container-fluid py-5 section-prazo wow fadeInUp" data-wow-delay="0.1s">
+<div class="content">
+<h1>Seu site de uma página entregue em uma semana ou menos! Garanto a entrega rápida e de alta qualidade, para que seu projeto esteja online em tempo recorde e pronto para seu uso, sendo essa minha diferenciação em meus projetos.</h1>
+</div>
+<div id="countdown-2" class="countdown">
+<div class="countdown-item">
+<span id="days-2">7</span>
+<p>Dias</p>
+</div>
+<div class="countdown-item">
+<span id="hours-2">00</span>
+<p>Horas</p>
+</div>
+<div class="countdown-item">
+<span id="minutes-2">00</span>
+<p>Minutos</p>
+</div>
+<div class="countdown-item">
+<span id="seconds-2">00</span>
+<p>Segundos</p>
+</div>
+</div>    
 </section>
 <section>
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
@@ -869,6 +927,29 @@ copiado: <span id=phone-number-copied></span>
 </div>
 </div>
 </div>
+</section>
+<section class="container-fluid py-5 section-prazo wow fadeInUp" data-wow-delay="0.1s">
+<div class="content">
+<h1>Seu site de lojas online pronto em uma semana a três semanas ou mais! Comprometo-me em entregar um site robusto e de alta qualidade, atendendo às suas necessidades específicas e garantindo uma presença digital eficaz.</h1>
+</div>
+<div id="countdown-3" class="countdown">
+<div class="countdown-item">
+<span id="days-3">21</span>
+<p>Dias</p>
+</div>
+<div class="countdown-item">
+<span id="hours-3">00</span>
+<p>Horas</p>
+</div>
+<div class="countdown-item">
+<span id="minutes-3">00</span>
+<p>Minutos</p>
+</div>
+<div class="countdown-item">
+<span id="seconds-3">00</span>
+<p>Segundos</p>
+</div>
+</div>    
 </section>
 <section id=testimonials>
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
@@ -1237,6 +1318,8 @@ Recomendo entrar em contato comigo via Messenger do Facebook ou WhatsApp para ob
 <script src=https://kit.fontawesome.com/6c999c6add.js crossorigin=anonymous></script>
 <script src=js/main.js></script>
 <script src=js/index.js></script>
-<script>document.querySelectorAll(".model-item-2 video").forEach((e=>{e.addEventListener("click",(function(){e.requestFullscreen?e.requestFullscreen():e.mozRequestFullScreen?e.mozRequestFullScreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():e.msRequestFullscreen&&e.msRequestFullscreen()}))})),$(document).ready((function(){$(".carousel-container").slick({slidesToShow:1,slidesToScroll:1,arrows:!0,prevArrow:'<button type="button" class="slick-prev">&#8249;</button>',nextArrow:'<button type="button" class="slick-next">&#8250;</button>',responsive:[{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1}}]})}));const functionalities={site_institucional:[{id:"seo-optimization",label:"Otimização SEO",value:300},{id:"contact-form",label:"Formulário de Contato",value:100}],ecommerce:[{id:"payment-gateway",label:"Integração com Gateway de Pagamento",value:500},{id:"product-management",label:"Gerenciamento de Produtos",value:400}],blog:[{id:"comment-system",label:"Sistema de Comentários",value:200},{id:"content-scheduling",label:"Agendamento de Conteúdo",value:150}],app_mobile:[{id:"push-notifications",label:"Notificações Push",value:300},{id:"in-app-purchases",label:"Compras In-App",value:400}]};function updateFunctionalities(){const e=document.getElementById("project-type").value,t=document.getElementById("additional-features");t.innerHTML="",functionalities[e].forEach((e=>{const a=document.createElement("div");a.classList.add("form-check"),a.innerHTML=`<input type="checkbox" class="form-check-input" id="${e.id}" value="${e.value}"><label class="form-check-label" for="${e.id}">${e.label}</label>`,t.appendChild(a)}))}function animateValue(e,t,a,n,l="",o="",c=1){let i=a-t,s=t,u=a>t?1:-1,r=Math.abs(Math.floor(n/i*c)),d=document.getElementById(e),m=setInterval((function(){s+=u,d.innerHTML=`<span class="green-currency">${l}</span>${s.toLocaleString()}${o}`,s==a&&clearInterval(m)}),r)}function calculateBudget(){let e=document.getElementById("project-type").value,t=parseInt(document.getElementById("pages-number").value),a=document.getElementById("design-level").value,n=document.getElementById("maintenance").value,l=document.getElementById("deadline").value,o=0,c=0,i=0;switch(e){case"site_institucional":o=1e3,i=200;break;case"ecommerce":o=3e3,i=300;break;case"blog":o=1500,i=200;break;case"app_mobile":o=5e3,i=500}switch(c+=100*t,functionalities[e].forEach((e=>{document.getElementById(e.id).checked&&(c+=parseInt(document.getElementById(e.id).value))})),a){case"intermediate":c+=500;break;case"advanced":c+=1e3}switch(n){case"basic_support":c+=200,i+=100;break;case"full_support":c+=500,i+=200}switch(l){case"fast":c+=1e3;break;case"extended":c-=500}animateValue("result-amount",0,o+c,2e3,"R$ ","",-0),animateValue("monthly-amount",0,i,2e3,"R$ "," por mês",-0)}updateFunctionalities();var map=L.map("mapa-interativo").setView([-30.853974212174627,-51.80767728463423],14);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map),L.marker([-30.853974212174627,-51.80767728463423]).addTo(map)</script>
+<script>document.querySelectorAll(".model-item-2 video").forEach((e=>{e.addEventListener("click",(function(){e.requestFullscreen?e.requestFullscreen():e.mozRequestFullScreen?e.mozRequestFullScreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():e.msRequestFullscreen&&e.msRequestFullscreen()}))})),$(document).ready((function(){$(".carousel-container").slick({slidesToShow:1,slidesToScroll:1,arrows:!0,prevArrow:'<button type="button" class="slick-prev">&#8249;</button>',nextArrow:'<button type="button" class="slick-next">&#8250;</button>',responsive:[{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1}}]})}));const functionalities={site_institucional:[{id:"seo-optimization",label:"Otimização SEO",value:300},{id:"contact-form",label:"Formulário de Contato",value:100}],ecommerce:[{id:"payment-gateway",label:"Integração com Gateway de Pagamento",value:500},{id:"product-management",label:"Gerenciamento de Produtos",value:400}],blog:[{id:"comment-system",label:"Sistema de Comentários",value:200},{id:"content-scheduling",label:"Agendamento de Conteúdo",value:150}],app_mobile:[{id:"push-notifications",label:"Notificações Push",value:300},{id:"in-app-purchases",label:"Compras In-App",value:400}]};function updateFunctionalities(){const e=document.getElementById("project-type").value,t=document.getElementById("additional-features");t.innerHTML="",functionalities[e].forEach((e=>{const a=document.createElement("div");a.classList.add("form-check"),a.innerHTML=`<input type="checkbox" class="form-check-input" id="${e.id}" value="${e.value}"><label class="form-check-label" for="${e.id}">${e.label}</label>`,t.appendChild(a)}))}function animateValue(e,t,a,n,l="",o="",c=1){let i=a-t,s=t,u=a>t?1:-1,r=Math.abs(Math.floor(n/i*c)),d=document.getElementById(e),m=setInterval((function(){s+=u,d.innerHTML=`<span class="green-currency">${l}</span>${s.toLocaleString()}${o}`,s==a&&clearInterval(m)}),r)}function calculateBudget(){let e=document.getElementById("project-type").value,t=parseInt(document.getElementById("pages-number").value),a=document.getElementById("design-level").value,n=document.getElementById("maintenance").value,l=document.getElementById("deadline").value,o=0,c=0,i=0;switch(e){case"site_institucional":o=1e3,i=200;break;case"ecommerce":o=3e3,i=300;break;case"blog":o=1500,i=200;break;case"app_mobile":o=5e3,i=500}switch(c+=100*t,functionalities[e].forEach((e=>{document.getElementById(e.id).checked&&(c+=parseInt(document.getElementById(e.id).value))})),a){case"intermediate":c+=500;break;case"advanced":c+=1e3}switch(n){case"basic_support":c+=200,i+=100;break;case"full_support":c+=500,i+=200}switch(l){case"fast":c+=1e3;break;case"extended":c-=500}animateValue("result-amount",0,o+c,2e3,"R$ ","",-0),animateValue("monthly-amount",0,i,2e3,"R$ "," por mês",-0)}updateFunctionalities();var map=L.map("mapa-interativo").setView([-30.853974212174627,-51.80767728463423],14);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map),L.marker([-30.853974212174627,-51.80767728463423]).addTo(map)
+document.addEventListener("DOMContentLoaded",function(){function $($,e){let n=document.getElementById($),t=n.querySelector("#days-"+$.split("-")[1]),o=n.querySelector("#hours-"+$.split("-")[1]),r=n.querySelector("#minutes-"+$.split("-")[1]),i=n.querySelector("#seconds-"+$.split("-")[1]),l=setInterval(function $(){let n=new Date().getTime(),u=e-n,T=Math.floor(u%864e5/36e5),_=Math.floor(u%36e5/6e4),c=Math.floor(u%6e4/1e3);t.innerHTML=Math.floor(u/864e5),o.innerHTML=T<10?"0"+T:T,r.innerHTML=_<10?"0"+_:_,i.innerHTML=c<10?"0"+c:c,u<0&&(clearInterval(l),t.innerHTML="0",o.innerHTML="00",r.innerHTML="00",i.innerHTML="00")},1e3)}let e=new Date().getTime()+6048e5,n=new Date().getTime()+6048e5,t=new Date().getTime()+18144e5;$("countdown-1",e),$("countdown-2",n),$("countdown-3",t)});
+</script>
 </body>
 </html>
