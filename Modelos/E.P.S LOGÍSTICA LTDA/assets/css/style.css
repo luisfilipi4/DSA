@@ -23,7 +23,7 @@ p {
 
 /* Cor da barra de rolagem ao passar o mouse */
 ::-webkit-scrollbar-thumb:hover {
-    background: #021d3a; /* Cor ao passar o mouse */
+    background: #fff; /* Cor ao passar o mouse */
 }
 .account_login-area li:first-child,
 .header-area.header-style-2 .main-menu nav ul li:first-child,
@@ -1766,9 +1766,11 @@ button {
     background-color: #021d3a;
     color: #509de9;
     border: 2px solid #509de9; /* Destaca a borda no hover */
-    transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
-
+}
+.filter-btn,
+.submit-btn:hover{
+    transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
 }
 .contact-form-image img {
     width: 100%;
