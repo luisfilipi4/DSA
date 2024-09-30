@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Mouse with Keyboard</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <section id="mapa-saude" class="py-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Encontre Serviços de Saúde Próximos</h2>
+                <p>Use o mapa abaixo para encontrar serviços de saúde perto de você.</p>
+            </div>
+            <div id="map" style="height: 500px;"></div>
+        </div>
+    </section>
+    
+    <script>
+    // Usando Google Maps API para exibir serviços de saúde
+    function initMap() {
+        var userLocation = { lat: -23.5505, lng: -46.6333 }; // Posição de exemplo
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: userLocation,
+            zoom: 12
+        });
+    
+        // Adicionar marcadores de serviços de saúde
+        var serviceLocation = { lat: -23.5515, lng: -46.6343 }; // Exemplo
+        var marker = new google.maps.Marker({
+            position: serviceLocation,
+            map: map,
+            title: 'Hospital Próximo'
+        });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
